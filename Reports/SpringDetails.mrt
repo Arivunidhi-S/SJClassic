@@ -1,0 +1,1848 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <SqlCon Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>SqlCon</Alias>
+        <ConnectionString>Initial Catalog=SJClassic;Integrated Security=False;Password=myplant;User ID=sa;Data Source=ARIVU-PC;Persist Security Info=True</ConnectionString>
+        <Name>SqlCon</Name>
+      </SqlCon>
+    </Databases>
+    <DataSources isList="true" count="1">
+      <OrderForm Ref="3" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>OrderForm</Alias>
+        <Columns isList="true" count="86">
+          <value>Address,System.String</value>
+          <value>Approval,System.String</value>
+          <value>BasePrice,System.String</value>
+          <value>Color1,System.String</value>
+          <value>Color2,System.String</value>
+          <value>Color3,System.String</value>
+          <value>Color4,System.String</value>
+          <value>Color5,System.String</value>
+          <value>Color6,System.String</value>
+          <value>ControlBox,System.String</value>
+          <value>createdby,System.String</value>
+          <value>createddate,System.String</value>
+          <value>Currnt,System.String</value>
+          <value>Date,System.String</value>
+          <value>DealerID,System.String</value>
+          <value>DealerName,System.String</value>
+          <value>Deleted,System.String</value>
+          <value>DeliveryType,System.String</value>
+          <value>DoorOrein,System.String</value>
+          <value>DoorType,System.String</value>
+          <value>Height,System.String</value>
+          <value>HeightCal,System.String</value>
+          <value>Hgt1,System.String</value>
+          <value>Hgt2,System.String</value>
+          <value>Hgt3,System.String</value>
+          <value>Hgt4,System.String</value>
+          <value>Hgt5,System.String</value>
+          <value>Hgt6,System.String</value>
+          <value>Letterbox,System.String</value>
+          <value>LockType,System.String</value>
+          <value>ManualOver,System.String</value>
+          <value>modifiedby,System.String</value>
+          <value>modifydate,System.String</value>
+          <value>Motor,System.String</value>
+          <value>NamePlate,System.String</value>
+          <value>OrderNo,System.String</value>
+          <value>OrderAutoID,System.String</value>
+          <value>OrdStatus,System.String</value>
+          <value>OtherLckTyp,System.String</value>
+          <value>Packing,System.String</value>
+          <value>Pulley,System.String</value>
+          <value>PullHandle,System.String</value>
+          <value>PullHook,System.String</value>
+          <value>Qty1,System.String</value>
+          <value>Qty2,System.String</value>
+          <value>Qty3,System.String</value>
+          <value>Qty4,System.String</value>
+          <value>Qty5,System.String</value>
+          <value>Qty6,System.String</value>
+          <value>Remark1,System.String</value>
+          <value>Remark2,System.String</value>
+          <value>RemoteBox,System.String</value>
+          <value>rowversions,System.Int64</value>
+          <value>SendMail,System.String</value>
+          <value>SendMail1,System.String</value>
+          <value>SendMail3,System.String</value>
+          <value>SendName,System.String</value>
+          <value>SendName1,System.String</value>
+          <value>SendName3,System.String</value>
+          <value>ShippingDate,System.String</value>
+          <value>SINo,System.String</value>
+          <value>SplRemark,System.String</value>
+          <value>SplSpec,System.String</value>
+          <value>Spring1,System.String</value>
+          <value>Spring1pcs,System.String</value>
+          <value>Spring2,System.String</value>
+          <value>Spring2pcs,System.String</value>
+          <value>Spring3,System.String</value>
+          <value>Spring3pcs,System.String</value>
+          <value>Spring4,System.String</value>
+          <value>Spring4pcs,System.String</value>
+          <value>Tel,System.String</value>
+          <value>TotalAmt,System.String</value>
+          <value>Unit,System.String</value>
+          <value>UnitPrice,System.String</value>
+          <value>UnitQty,System.String</value>
+          <value>UPSBattery,System.String</value>
+          <value>Venthole,System.String</value>
+          <value>VentRow,System.String</value>
+          <value>Voltage,System.String</value>
+          <value>Walltype,System.String</value>
+          <value>Width,System.String</value>
+          <value>WidthCal,System.String</value>
+          <value>WrntyDoor,System.String</value>
+          <value>WrntyMotor,System.String</value>
+          <value>InstallDate,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>OrderForm</Name>
+        <NameInSource>SqlCon</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select *,CONVERT(VARCHAR(10), ShippingDate, 103) as InstallDate from OrderForm where deleted=0</SqlCommand>
+      </OrderForm>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="4" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="23">
+        <Text71 Ref="5" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>9,13.8,1,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>e0369b58db9e42eaa959352f1dabb94f</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text71</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>{OrderForm.Pulley} pcs</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text71>
+        <Text72 Ref="6" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>8,13.8,1,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <Guid>c94d5b2e96254649aa9b8ce344fd343a</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text72</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>Pulley :</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text72>
+        <Text73 Ref="7" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>11.4,13.8,1.4,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>8722b393826749d6a9a20aa527fda205</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text73</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>{OrderForm.Spring1}</Text>
+          <TextBrush>Black</TextBrush>
+        </Text73>
+        <Text74 Ref="8" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>10.2,13.8,1.2,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <Guid>f378331be4a547eaadb66776464bc556</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text74</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>Spring 1 :</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text74>
+        <Text75 Ref="9" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>16,13.8,1.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>bb43f5f72ba1431e8d2f1cf90f5bee7f</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text75</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>{OrderForm.Spring2}</Text>
+          <TextBrush>Black</TextBrush>
+        </Text75>
+        <Text76 Ref="10" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>14.8,13.8,1.2,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <Guid>c4a4e8bc747e4056afc758bb0fe9975a</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text76</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>Spring 2 :</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text76>
+        <Text77 Ref="11" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>13.4,13.8,1.2,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>e60230f046d2459ab493ebd1a21007d7</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text77</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>{OrderForm.Spring1pcs} pcs</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text77>
+        <Text79 Ref="12" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>11.4,14.4,1.4,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>705fbfcca2544ea8911f1b6cd17f77fa</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text79</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>{OrderForm.Spring3}</Text>
+          <TextBrush>Black</TextBrush>
+        </Text79>
+        <Text80 Ref="13" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>10.2,14.4,1.2,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <Guid>4c504467858446b4895716321f98839b</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text80</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>Spring 3 :</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text80>
+        <Text81 Ref="14" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>16,14.4,1.6,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>364da18461e041c9af70eb4d27924519</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text81</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>{OrderForm.Spring4}</Text>
+          <TextBrush>Black</TextBrush>
+        </Text81>
+        <Text82 Ref="15" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>14.8,14.4,1.2,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <Guid>cff946da114a4aa2970ff70a84b1c1c9</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text82</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>Spring 4 :</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text82>
+        <Text83 Ref="16" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>18.2,13.8,1.2,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>821c81fe67134d2ca4e962352b11e0d3</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text83</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>{OrderForm.Spring2pcs} pcs</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text83>
+        <Text78 Ref="17" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>18.2,14.4,1.2,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>b058542aadfe4f26bcc68f756386c094</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text78</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>{OrderForm.Spring4pcs} pcs</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text78>
+        <Text84 Ref="18" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>13.4,14.4,1.2,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>10b990387fc64cd6b046d38cbff500cb</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text84</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>{OrderForm.Spring3pcs} pcs</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text84>
+        <Text85 Ref="19" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>12.8,13.8,0.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <Guid>beeaaab0f5324531a61ec65fa176838c</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text85</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>Qty :</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text85>
+        <Text86 Ref="20" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>12.8,14.4,0.6,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <Guid>3153d1ca272d4cb09c277bca6766f0c7</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text86</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>Qty :</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text86>
+        <Text87 Ref="21" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>17.6,13.8,0.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <Guid>647d31f35784482c946435b7b41d5edc</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text87</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>Qty :</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text87>
+        <Text88 Ref="22" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>17.6,14.4,0.6,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <Guid>6184efd526f64137b3fcb551430772ed</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text88</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Text>Qty :</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text88>
+        <DataBand1 Ref="23" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,0.4,9,7.6</ClientRectangle>
+          <Components isList="true" count="32">
+            <Text1 Ref="24" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1,0.4,7.04,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Lucida Bright,10,Bold| Italic</Font>
+              <Guid>4916702ac008464d89f6e2b2ad5b3168</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <Text>SJ CLASSIC MANUFACTURING SDN BHD</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text1>
+            <Text2 Ref="25" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1,6.6,7.04,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Lucida Bright,10,Bold| Italic</Font>
+              <Guid>63fb3f5016a243348048b014770df325</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <Text>Tel: 09-5382815/6/7/8   Fax:09-5382819</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text2>
+            <Text3 Ref="26" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.8,3.4,1.6,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>b88c3585eb9549b49c058fd3ac4a899e</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <Text>{OrderForm.Pulley} pcs</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text3>
+            <Text4 Ref="27" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.2,3.4,1.52,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>c752c87d7690457bbd4f62997042ed03</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <Text>Pulley :</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text4>
+            <Text5 Ref="28" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3,4,1.8,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>7c77711a481b4758ae1a2bc09096cb98</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <Text>{OrderForm.Spring1}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text5>
+            <Text6 Ref="29" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.2,4,1.8,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>72ba1b5b3ea6435ab7b11b86e7fad419</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <Text>Spring 1 :</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text6>
+            <Text7 Ref="30" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6,4,1.6,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>7d8098745f0a4bada0c0af645299af01</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <Text>{OrderForm.Spring1pcs} pcs</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text7>
+            <Text8 Ref="31" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5,4,1,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>9653da1b009c488b894119099ff82970</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <Text>Qty :</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text8>
+            <Text9 Ref="32" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.98,4.6,1.89,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>8a7232448f31467cb17f02747bb53166</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <Text>{OrderForm.Spring2}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text9>
+            <Text10 Ref="33" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.2,4.6,1.78,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>267ae60de6064bb3a7cd73da8eac1391</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <Text>Spring 2 :</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text10>
+            <Text11 Ref="34" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.08,4.6,1.52,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>417d95011d8f4537aeed895f307a37ec</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <Text>{OrderForm.Spring2pcs} pcs</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text11>
+            <Text12 Ref="35" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.07,4.6,1.02,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>9e3741063caf45dea7cb45a033abcbf0</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <Text>Qty :</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text12>
+            <Text13 Ref="36" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3,5.2,1.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>4a937c7b67564e52acffab4a7ddc4942</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <Text>{OrderForm.Spring3}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text13>
+            <Text14 Ref="37" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.2,5.2,1.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>664348b7114e46f3836941a0d500ae53</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <Text>Spring 3 :</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text14>
+            <Text15 Ref="38" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6,5.2,1.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>00e9ddc981e54672b01b25844f232567</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <Text>{OrderForm.Spring3pcs} pcs</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text15>
+            <Text16 Ref="39" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5,5.2,1,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>72a66c902b644377a71104edeb5edfb7</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <Text>Qty :</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text16>
+            <Text17 Ref="40" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3,5.8,1.89,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>d73d358d02494da1b7893657cbf56418</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <Text>{OrderForm.Spring4}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text17>
+            <Text18 Ref="41" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.2,5.8,1.78,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>a2b9d73cb68a4b689d0990e4ba2d2eaf</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <Text>Spring 4 :</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text18>
+            <Text19 Ref="42" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6,5.8,1.52,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>59d731b38d4849a1a6be455e4d4eb242</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <Text>{OrderForm.Spring4pcs} pcs</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text19>
+            <Text20 Ref="43" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5,5.8,1.02,0.51</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>82644f47731c4d1eb56721636fe90f4f</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <Text>Qty :</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text20>
+            <Text21 Ref="44" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.8,1.2,4.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <Text>{OrderForm.OrderNo}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text21>
+            <Text22 Ref="45" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.2,1.2,1.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text22</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <Text>OrderNo :</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text22>
+            <Text23 Ref="46" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.4,2,5,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text23</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <Text>{OrderForm.DealerName}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text23>
+            <Text24 Ref="47" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.2,2,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text24</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <Text>DealerName :</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text24>
+            <Text25 Ref="48" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,2.8,2.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text25</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <Text>{OrderForm.InstallDate}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text25>
+            <Text26 Ref="49" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.2,2.8,2.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text26</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <Text>ShippingDate :</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text26>
+            <StartPointPrimitive1 Ref="50" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>0,0,0,0</ClientRectangle>
+              <Name>StartPointPrimitive1</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <ReferenceToGuid>80c39eaa92b347a48a79a0e7374b3ce7</ReferenceToGuid>
+            </StartPointPrimitive1>
+            <EndPointPrimitive1 Ref="51" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>8.6,7.4,0,0</ClientRectangle>
+              <Name>EndPointPrimitive1</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <ReferenceToGuid>80c39eaa92b347a48a79a0e7374b3ce7</ReferenceToGuid>
+            </EndPointPrimitive1>
+            <StartPointPrimitive2 Ref="52" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>0.2,0.2,0,0</ClientRectangle>
+              <Name>StartPointPrimitive2</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <ReferenceToGuid>14ec2057cfdc4d7a99f77fa7609cbb12</ReferenceToGuid>
+            </StartPointPrimitive2>
+            <EndPointPrimitive2 Ref="53" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>8.4,7.2,0,0</ClientRectangle>
+              <Name>EndPointPrimitive2</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <ReferenceToGuid>14ec2057cfdc4d7a99f77fa7609cbb12</ReferenceToGuid>
+            </EndPointPrimitive2>
+            <StartPointPrimitive5 Ref="54" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>1,0.4,0,0</ClientRectangle>
+              <Name>StartPointPrimitive5</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <ReferenceToGuid>1ad5c7cca2cf40eca8aa50c0a0bb94a9</ReferenceToGuid>
+            </StartPointPrimitive5>
+            <StartPointPrimitive6 Ref="55" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>1.2,0.6,0,0</ClientRectangle>
+              <Name>StartPointPrimitive6</Name>
+              <Page isRef="4" />
+              <Parent isRef="23" />
+              <ReferenceToGuid>e4b732d65e734c2ca7c970c781044034</ReferenceToGuid>
+            </StartPointPrimitive6>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>OrderForm</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <RectanglePrimitive1 Ref="56" type="RectanglePrimitive" isKey="true">
+          <ClientRectangle>0,0.4,8.6,7.4</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>80c39eaa92b347a48a79a0e7374b3ce7</Guid>
+          <Name>RectanglePrimitive1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Size>3</Size>
+        </RectanglePrimitive1>
+        <RectanglePrimitive2 Ref="57" type="RectanglePrimitive" isKey="true">
+          <ClientRectangle>0.2,0.6,8.2,7</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>14ec2057cfdc4d7a99f77fa7609cbb12</Guid>
+          <Name>RectanglePrimitive2</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Size>2</Size>
+        </RectanglePrimitive2>
+        <EndPointPrimitive5 Ref="58" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>9.6,8.2,0,0</ClientRectangle>
+          <Name>EndPointPrimitive5</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <ReferenceToGuid>1ad5c7cca2cf40eca8aa50c0a0bb94a9</ReferenceToGuid>
+        </EndPointPrimitive5>
+        <EndPointPrimitive6 Ref="59" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>9.4,8,0,0</ClientRectangle>
+          <Name>EndPointPrimitive6</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <ReferenceToGuid>e4b732d65e734c2ca7c970c781044034</ReferenceToGuid>
+        </EndPointPrimitive6>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>7cbd25f9eda74fcd862e0d1e9ab82eac</Guid>
+      <Margins>0.5,0.5,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>10</PageHeight>
+      <PageWidth>10</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="60" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="61" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>10/15/2014 9:52:11 AM</ReportChanged>
+  <ReportCreated>10/15/2012 11:10:08 AM</ReportCreated>
+  <ReportFile>C:\inetpub\wwwroot\SJClassic\Reports\SpringDetails.mrt</ReportFile>
+  <ReportGuid>f2f729917b9b4f8ba0228b5a9b3d752c</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2011.2.1100</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+        public Stimulsoft.Report.Components.StiPage Page1;
+        public Stimulsoft.Report.Components.StiText Text15;
+        public Stimulsoft.Report.Components.StiDataBand DataBand1;
+        public Stimulsoft.Report.BarCodes.StiBarCode BarCode1;
+        public Stimulsoft.Report.Components.StiText Text1;
+        public Stimulsoft.Report.Components.StiText Text2;
+        public Stimulsoft.Report.Components.StiWatermark Page1_Watermark;
+        public Stimulsoft.Report.Print.StiPrinterSettings Report_PrinterSettings;
+        public OrderFormDataSource OrderForm;
+        
+        public void Text15__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = ToString(sender, OrderForm.Expr1, true);
+        }
+        
+        public void BarCode1__GetBarCode(object sender, Stimulsoft.Report.Events.StiValueEventArgs e)
+        {
+            e.Value = "SerialNo:" + OrderForm.SINo + "\r\nHeight:" + OrderForm.HeightCal + "\r\nWidth:" + OrderForm.Width + "\r\nDate of Install:" + OrderForm.ShippingDate + "\r\nLockType:" + OrderForm.LockType + OrderForm.OtherLckTyp + "\r\nControlBox:" + OrderForm.ControlBox + "\r\nMotor:" + OrderForm.Motor + "\r\nUPS Battery:" + OrderForm.UPSBattery + "\r\nVoltage:" + OrderForm.Voltage + "\r\nCurrent:" + OrderForm.Currnt;
+        }
+        
+        public void Text1__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = ToString(sender, OrderForm.OrderNo, true);
+        }
+        
+        public void Text2__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "OrderNo:";
+        }
+        
+        private void InitializeComponent()
+        {
+            this.OrderForm = new OrderFormDataSource();
+            this.NeedsCompiling = false;
+            this.EngineVersion = Stimulsoft.Report.Engine.StiEngineVersion.EngineV2;
+            this.ReferencedAssemblies = new System.String[] {
+                    "System.Dll",
+                    "System.Drawing.Dll",
+                    "System.Windows.Forms.Dll",
+                    "System.Data.Dll",
+                    "System.Xml.Dll",
+                    "Stimulsoft.Controls.Dll",
+                    "Stimulsoft.Base.Dll",
+                    "Stimulsoft.Report.Dll"};
+            this.ReportAlias = "Report";
+            // 
+            // ReportChanged
+            // 
+            this.ReportChanged = new DateTime(2014, 9, 26, 11, 46, 41, 184);
+            // 
+            // ReportCreated
+            // 
+            this.ReportCreated = new DateTime(2012, 10, 15, 11, 10, 8, 0);
+            this.ReportFile = "C:\\inetpub\\wwwroot\\SJClassic\\Reports\\Warranty.mrt";
+            this.ReportGuid = "a8e1b02f57254f0cb85c43dc5c2001aa";
+            this.ReportName = "Report";
+            this.ReportUnit = Stimulsoft.Report.StiReportUnitType.Centimeters;
+            this.ReportVersion = "2011.2.1100";
+            this.ScriptLanguage = Stimulsoft.Report.StiReportLanguageType.CSharp;
+            // 
+            // Page1
+            // 
+            this.Page1 = new Stimulsoft.Report.Components.StiPage();
+            this.Page1.Guid = "7cbd25f9eda74fcd862e0d1e9ab82eac";
+            this.Page1.Name = "Page1";
+            this.Page1.PageHeight = 10;
+            this.Page1.PageWidth = 10;
+            this.Page1.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 2, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.Page1.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            // 
+            // Text15
+            // 
+            this.Text15 = new Stimulsoft.Report.Components.StiText();
+            this.Text15.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(10.2, 0.4, 1.2, 7.4);
+            this.Text15.HorAlignment = Stimulsoft.Base.Drawing.StiTextHorAlignment.Center;
+            this.Text15.Name = "Text15";
+            this.Text15.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.Text15__GetValue);
+            this.Text15.Type = Stimulsoft.Report.Components.StiSystemTextType.DataColumn;
+            this.Text15.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.Text15.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.Text15.Font = new System.Drawing.Font("IDAutomationHC39M", 9F, System.Drawing.FontStyle.Bold);
+            this.Text15.Guid = null;
+            this.Text15.Indicator = null;
+            this.Text15.Interaction = null;
+            this.Text15.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.Text15.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.Text15.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // DataBand1
+            // 
+            this.DataBand1 = new Stimulsoft.Report.Components.StiDataBand();
+            this.DataBand1.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0, 0.4, 9, 7.4);
+            this.DataBand1.DataSourceName = "OrderForm";
+            this.DataBand1.Name = "DataBand1";
+            this.DataBand1.Sort = new System.String[0];
+            this.DataBand1.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.DataBand1.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.DataBand1.BusinessObjectGuid = null;
+            // 
+            // BarCode1
+            // 
+            this.BarCode1 = new Stimulsoft.Report.BarCodes.StiBarCode();
+            this.BarCode1.BackColor = System.Drawing.Color.Transparent;
+            this.BarCode1.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0, 0, 2.8, 3);
+            this.BarCode1.GetBarCode += new Stimulsoft.Report.Events.StiValueEventHandler(this.BarCode1__GetBarCode);
+            this.BarCode1.ForeColor = System.Drawing.Color.Black;
+            this.BarCode1.HorAlignment = Stimulsoft.Base.Drawing.StiHorAlignment.Center;
+            this.BarCode1.Name = "BarCode1";
+            this.BarCode1.BarCodeType = new Stimulsoft.Report.BarCodes.StiQRCodeBarCodeType(40F, Stimulsoft.Report.BarCodes.StiQRCodeErrorCorrectionLevel.Level1, Stimulsoft.Report.BarCodes.StiQRCodeSize.Automatic);
+            this.BarCode1.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.BarCode1.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.BarCode1.Guid = null;
+            this.BarCode1.Interaction = null;
+            // 
+            // Text1
+            // 
+            this.Text1 = new Stimulsoft.Report.Components.StiText();
+            this.Text1.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(4.4, 0.2, 3, 0.6);
+            this.Text1.Name = "Text1";
+            this.Text1.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.Text1__GetValue);
+            this.Text1.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.Text1.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.Text1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.Text1.Guid = null;
+            this.Text1.Indicator = null;
+            this.Text1.Interaction = null;
+            this.Text1.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.Text1.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.Text1.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // Text2
+            // 
+            this.Text2 = new Stimulsoft.Report.Components.StiText();
+            this.Text2.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(2.8, 0.2, 1.6, 0.6);
+            this.Text2.Name = "Text2";
+            this.Text2.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.Text2__GetValue);
+            this.Text2.Type = Stimulsoft.Report.Components.StiSystemTextType.Expression;
+            this.Text2.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.Text2.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.Text2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.Text2.Guid = null;
+            this.Text2.Indicator = null;
+            this.Text2.Interaction = null;
+            this.Text2.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.Text2.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.Text2.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            this.DataBand1.DataRelationName = null;
+            this.DataBand1.Guid = null;
+            this.DataBand1.Interaction = null;
+            this.DataBand1.MasterComponent = null;
+            this.Page1.ExcelSheetValue = null;
+            this.Page1.Interaction = null;
+            this.Page1.Margins = new Stimulsoft.Report.Components.StiMargins(0.5, 0.5, 1, 1);
+            this.Page1_Watermark = new Stimulsoft.Report.Components.StiWatermark();
+            this.Page1_Watermark.Font = new System.Drawing.Font("Arial", 100F);
+            this.Page1_Watermark.Image = null;
+            this.Page1_Watermark.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(50, 0, 0, 0));
+            this.Report_PrinterSettings = new Stimulsoft.Report.Print.StiPrinterSettings();
+            this.PrinterSettings = this.Report_PrinterSettings;
+            this.Page1.Report = this;
+            this.Page1.Watermark = this.Page1_Watermark;
+            this.Text15.Page = this.Page1;
+            this.Text15.Parent = this.Page1;
+            this.DataBand1.Page = this.Page1;
+            this.DataBand1.Parent = this.Page1;
+            this.BarCode1.Page = this.Page1;
+            this.BarCode1.Parent = this.DataBand1;
+            this.Text1.Page = this.Page1;
+            this.Text1.Parent = this.DataBand1;
+            this.Text2.Page = this.Page1;
+            this.Text2.Parent = this.DataBand1;
+            // 
+            // Add to DataBand1.Components
+            // 
+            this.DataBand1.Components.Clear();
+            this.DataBand1.Components.AddRange(new Stimulsoft.Report.Components.StiComponent[] {
+                        this.BarCode1,
+                        this.Text1,
+                        this.Text2});
+            // 
+            // Add to Page1.Components
+            // 
+            this.Page1.Components.Clear();
+            this.Page1.Components.AddRange(new Stimulsoft.Report.Components.StiComponent[] {
+                        this.Text15,
+                        this.DataBand1});
+            // 
+            // Add to Pages
+            // 
+            this.Pages.Clear();
+            this.Pages.AddRange(new Stimulsoft.Report.Components.StiPage[] {
+                        this.Page1});
+            this.OrderForm.Columns.AddRange(new Stimulsoft.Report.Dictionary.StiDataColumn[] {
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Address", "Address", "Address", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Approval", "Approval", "Approval", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("BasePrice", "BasePrice", "BasePrice", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Color1", "Color1", "Color1", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Color2", "Color2", "Color2", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Color3", "Color3", "Color3", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Color4", "Color4", "Color4", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Color5", "Color5", "Color5", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Color6", "Color6", "Color6", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("ControlBox", "ControlBox", "ControlBox", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("createdby", "createdby", "createdby", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("createddate", "createddate", "createddate", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Currnt", "Currnt", "Currnt", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Date", "Date", "Date", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("DealerID", "DealerID", "DealerID", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("DealerName", "DealerName", "DealerName", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Deleted", "Deleted", "Deleted", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("DeliveryType", "DeliveryType", "DeliveryType", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("DoorOrein", "DoorOrein", "DoorOrein", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("DoorType", "DoorType", "DoorType", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Height", "Height", "Height", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("HeightCal", "HeightCal", "HeightCal", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Hgt1", "Hgt1", "Hgt1", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Hgt2", "Hgt2", "Hgt2", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Hgt3", "Hgt3", "Hgt3", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Hgt4", "Hgt4", "Hgt4", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Hgt5", "Hgt5", "Hgt5", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Hgt6", "Hgt6", "Hgt6", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Letterbox", "Letterbox", "Letterbox", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("LockType", "LockType", "LockType", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("ManualOver", "ManualOver", "ManualOver", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("modifiedby", "modifiedby", "modifiedby", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("modifydate", "modifydate", "modifydate", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Motor", "Motor", "Motor", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("NamePlate", "NamePlate", "NamePlate", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("OrderAutoID", "OrderAutoID", "OrderAutoID", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("OrderNo", "OrderNo", "OrderNo", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("OrdStatus", "OrdStatus", "OrdStatus", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("OtherLckTyp", "OtherLckTyp", "OtherLckTyp", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Packing", "Packing", "Packing", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Pulley", "Pulley", "Pulley", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("PullHandle", "PullHandle", "PullHandle", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("PullHook", "PullHook", "PullHook", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Qty1", "Qty1", "Qty1", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Qty2", "Qty2", "Qty2", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Qty3", "Qty3", "Qty3", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Qty4", "Qty4", "Qty4", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Qty5", "Qty5", "Qty5", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Qty6", "Qty6", "Qty6", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Remark1", "Remark1", "Remark1", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Remark2", "Remark2", "Remark2", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("RemoteBox", "RemoteBox", "RemoteBox", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("rowversions", "rowversions", "rowversions", typeof(long)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("SendMail", "SendMail", "SendMail", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("SendMail1", "SendMail1", "SendMail1", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("SendMail3", "SendMail3", "SendMail3", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("SendName", "SendName", "SendName", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("SendName1", "SendName1", "SendName1", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("SendName3", "SendName3", "SendName3", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("ShippingDate", "ShippingDate", "ShippingDate", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("SINo", "SINo", "SINo", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("SplRemark", "SplRemark", "SplRemark", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("SplSpec", "SplSpec", "SplSpec", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Spring1", "Spring1", "Spring1", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Spring1pcs", "Spring1pcs", "Spring1pcs", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Spring2", "Spring2", "Spring2", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Spring2pcs", "Spring2pcs", "Spring2pcs", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Spring3", "Spring3", "Spring3", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Spring3pcs", "Spring3pcs", "Spring3pcs", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Spring4", "Spring4", "Spring4", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Spring4pcs", "Spring4pcs", "Spring4pcs", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Tel", "Tel", "Tel", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("TotalAmt", "TotalAmt", "TotalAmt", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Unit", "Unit", "Unit", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("UnitPrice", "UnitPrice", "UnitPrice", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("UnitQty", "UnitQty", "UnitQty", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("UPSBattery", "UPSBattery", "UPSBattery", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Venthole", "Venthole", "Venthole", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("VentRow", "VentRow", "VentRow", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Voltage", "Voltage", "Voltage", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Walltype", "Walltype", "Walltype", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Width", "Width", "Width", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("WidthCal", "WidthCal", "WidthCal", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("WrntyDoor", "WrntyDoor", "WrntyDoor", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("WrntyMotor", "WrntyMotor", "WrntyMotor", typeof(string))});
+            this.DataSources.Add(this.OrderForm);
+            this.Dictionary.Databases.Add(new Stimulsoft.Report.Dictionary.StiSqlDatabase("SqlCon", "SqlCon", "Initial Catalog=SJClassic;Integrated Security=False;Password=myplant;User ID=sa;Data Source=ARIVU-PC;Persist Security Info=True", false));
+            this.OrderForm.Connecting += new System.EventHandler(this.GetOrderForm_SqlCommand);
+        }
+        
+        public void GetOrderForm_SqlCommand(object sender, System.EventArgs e)
+        {
+            this.OrderForm.SqlCommand = "select * from OrderForm";
+        }
+        
+        #region DataSource OrderForm
+        public class OrderFormDataSource : Stimulsoft.Report.Dictionary.StiSqlSource
+        {
+            
+            public OrderFormDataSource() : 
+                    base("SqlCon", "OrderForm", "OrderForm", "", true, false, 30)
+            {
+            }
+            
+            public virtual string Address
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Address"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Approval
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Approval"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string BasePrice
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["BasePrice"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Color1
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Color1"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Color2
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Color2"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Color3
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Color3"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Color4
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Color4"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Color5
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Color5"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Color6
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Color6"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string ControlBox
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["ControlBox"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string createdby
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["createdby"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string createddate
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["createddate"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Currnt
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Currnt"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Date
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Date"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string DealerID
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["DealerID"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string DealerName
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["DealerName"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Deleted
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Deleted"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string DeliveryType
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["DeliveryType"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string DoorOrein
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["DoorOrein"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string DoorType
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["DoorType"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Height
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Height"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string HeightCal
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["HeightCal"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Hgt1
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Hgt1"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Hgt2
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Hgt2"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Hgt3
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Hgt3"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Hgt4
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Hgt4"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Hgt5
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Hgt5"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Hgt6
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Hgt6"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Letterbox
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Letterbox"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string LockType
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["LockType"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string ManualOver
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["ManualOver"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string modifiedby
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["modifiedby"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string modifydate
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["modifydate"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Motor
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Motor"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string NamePlate
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["NamePlate"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string OrderAutoID
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["OrderAutoID"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string OrderNo
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["OrderNo"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string OrdStatus
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["OrdStatus"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string OtherLckTyp
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["OtherLckTyp"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Packing
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Packing"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Pulley
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Pulley"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string PullHandle
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["PullHandle"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string PullHook
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["PullHook"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Qty1
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Qty1"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Qty2
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Qty2"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Qty3
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Qty3"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Qty4
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Qty4"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Qty5
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Qty5"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Qty6
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Qty6"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Remark1
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Remark1"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Remark2
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Remark2"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string RemoteBox
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["RemoteBox"], typeof(string), true)));
+                }
+            }
+            
+            public virtual long rowversions
+            {
+                get
+                {
+                    return ((long)(StiReport.ChangeType(this["rowversions"], typeof(long), true)));
+                }
+            }
+            
+            public virtual string SendMail
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["SendMail"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string SendMail1
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["SendMail1"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string SendMail3
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["SendMail3"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string SendName
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["SendName"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string SendName1
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["SendName1"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string SendName3
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["SendName3"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string ShippingDate
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["ShippingDate"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string SINo
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["SINo"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string SplRemark
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["SplRemark"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string SplSpec
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["SplSpec"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Spring1
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Spring1"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Spring1pcs
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Spring1pcs"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Spring2
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Spring2"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Spring2pcs
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Spring2pcs"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Spring3
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Spring3"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Spring3pcs
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Spring3pcs"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Spring4
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Spring4"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Spring4pcs
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Spring4pcs"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Tel
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Tel"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string TotalAmt
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["TotalAmt"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Unit
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Unit"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string UnitPrice
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["UnitPrice"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string UnitQty
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["UnitQty"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string UPSBattery
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["UPSBattery"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Venthole
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Venthole"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string VentRow
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["VentRow"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Voltage
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Voltage"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Walltype
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Walltype"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Width
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Width"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string WidthCal
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["WidthCal"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string WrntyDoor
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["WrntyDoor"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string WrntyMotor
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["WrntyMotor"], typeof(string), true)));
+                }
+            }
+        }
+        #endregion DataSource OrderForm
+        #endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

@@ -1,0 +1,1879 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <SJClassic Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>SJClassic</Alias>
+        <ConnectionString>Initial Catalog=SJClassic;Integrated Security=False;Password=myplant;User ID=sa;Data Source=ARIVU-PC;Persist Security Info=True</ConnectionString>
+        <Name>SJClassic</Name>
+      </SJClassic>
+    </Databases>
+    <DataSources isList="true" count="1">
+      <IncomingMaterial Ref="3" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>IncomingMaterial</Alias>
+        <Columns isList="true" count="15">
+          <value>createdby,System.String</value>
+          <value>createddate,System.DateTime</value>
+          <value>deleted,System.String</value>
+          <value>IncomingAutoid,System.String</value>
+          <value>MaterialAutoid,System.String</value>
+          <value>Materialcode,System.String</value>
+          <value>MaterialName,System.String</value>
+          <value>MaterialType,System.String</value>
+          <value>modifiedby,System.String</value>
+          <value>modifieddate,System.String</value>
+          <value>Quantity,System.String</value>
+          <value>rowversion,System.String</value>
+          <value>Size,System.String</value>
+          <value>StockDate,System.String</value>
+          <value>ShippingDate,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>IncomingMaterial</Name>
+        <NameInSource>SJClassic</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select *,CONVERT(VARCHAR(10), StockDate, 103) as ShippingDate from IncomingMaterial</SqlCommand>
+      </IncomingMaterial>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="4" type="Page" isKey="true">
+      <Border>All;Black;2;Double;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="12">
+        <HeaderBand1 Ref="5" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.2,7.49,0.8</ClientRectangle>
+          <Components isList="true" count="19">
+            <Text2 Ref="6" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.1,0.5,0.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>1a78eae47a2b472a8da686802c29fafe</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>Material code</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text2>
+            <Text4 Ref="7" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1,0.5,1.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>7a0b1e42e1f84f62a4bf15774cd98740</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>Material Name</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text4>
+            <Text6 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,0.5,1.1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>eb939bcfa78b4da09b6b14d1a3d62565</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>Material Type</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text6>
+            <Text8 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.9,0.5,0.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>97075c9e063f4b398e880567f9d64524</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>Size</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text8>
+            <Text10 Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.9,0.5,0.8,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>bfb9d9f968a1429da7a969999a0e69fa</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>Stock Date</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text10>
+            <Text1 Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6,0.5,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>4ad3c72ce32447ba83dd2ed830966ce1</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>Added Quantity</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text1>
+            <Text3 Ref="12" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,0.1,2.5,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Berlin Sans FB Demi,14,Bold</Font>
+              <Guid>bc60390be8a042278fd1888e196f6143</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>Incoming Material Details</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text3>
+            <HorizontalLinePrimitive2 Ref="13" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,0.4,7.5,0.01</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="14" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>9176da48b8c94840bfc330abea5d9d58</Guid>
+              <Name>HorizontalLinePrimitive2</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <StartCap Ref="15" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive2>
+            <HorizontalLinePrimitive3 Ref="16" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,0.8,7.5,0.01</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="17" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>6a088ed709b9469da88c66ccae833c36</Guid>
+              <Name>HorizontalLinePrimitive3</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <StartCap Ref="18" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive3>
+            <StartPointPrimitive2 Ref="19" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>2.6,0.4,0,0</ClientRectangle>
+              <Name>StartPointPrimitive2</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <ReferenceToGuid>69a78b01d8a941ebae5d1978edddda81</ReferenceToGuid>
+            </StartPointPrimitive2>
+            <EndPointPrimitive2 Ref="20" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>2.6,0.8,0,0</ClientRectangle>
+              <Name>EndPointPrimitive2</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <ReferenceToGuid>69a78b01d8a941ebae5d1978edddda81</ReferenceToGuid>
+            </EndPointPrimitive2>
+            <StartPointPrimitive9 Ref="21" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>6,0.4,0,0</ClientRectangle>
+              <Name>StartPointPrimitive9</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <ReferenceToGuid>7164478c1f1d45d092c5a09a2e70acd7</ReferenceToGuid>
+            </StartPointPrimitive9>
+            <StartPointPrimitive10 Ref="22" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>4.6,0.4,0,0</ClientRectangle>
+              <Name>StartPointPrimitive10</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <ReferenceToGuid>6f88b0509cc04afc874804a7038e25a7</ReferenceToGuid>
+            </StartPointPrimitive10>
+            <EndPointPrimitive10 Ref="23" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>4.6,0.8,0,0</ClientRectangle>
+              <Name>EndPointPrimitive10</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <ReferenceToGuid>6f88b0509cc04afc874804a7038e25a7</ReferenceToGuid>
+            </EndPointPrimitive10>
+            <StartPointPrimitive11 Ref="24" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>3.7,0.4,0,0</ClientRectangle>
+              <Name>StartPointPrimitive11</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <ReferenceToGuid>2af8891ad04e4983a5453fa92870ae7b</ReferenceToGuid>
+            </StartPointPrimitive11>
+            <EndPointPrimitive11 Ref="25" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>3.7,0.8,0,0</ClientRectangle>
+              <Name>EndPointPrimitive11</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <ReferenceToGuid>2af8891ad04e4983a5453fa92870ae7b</ReferenceToGuid>
+            </EndPointPrimitive11>
+            <StartPointPrimitive12 Ref="26" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>1,0.4,0,0</ClientRectangle>
+              <Name>StartPointPrimitive12</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <ReferenceToGuid>3582b890f2b5479aaafbc7140d46e299</ReferenceToGuid>
+            </StartPointPrimitive12>
+            <EndPointPrimitive12 Ref="27" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>1,0.8,0,0</ClientRectangle>
+              <Name>EndPointPrimitive12</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <ReferenceToGuid>3582b890f2b5479aaafbc7140d46e299</ReferenceToGuid>
+            </EndPointPrimitive12>
+            <EndPointPrimitive9 Ref="28" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>6,0.8,0,0</ClientRectangle>
+              <Name>EndPointPrimitive9</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <ReferenceToGuid>7164478c1f1d45d092c5a09a2e70acd7</ReferenceToGuid>
+            </EndPointPrimitive9>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>HeaderBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </HeaderBand1>
+        <DataBand1 Ref="29" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,1.4,7.49,0.4</ClientRectangle>
+          <Components isList="true" count="17">
+            <Text11 Ref="30" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.4,0.1,0.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>{IncomingMaterial.Quantity}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text11>
+            <Text18 Ref="31" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.7,0.1,1.2,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>c9c8705f21ae4df98ac063c8f94e4fb7</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>{IncomingMaterial.ShippingDate}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text18>
+            <Text19 Ref="32" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.8,0.1,0.7,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>8b060e3d5d4041928b0d1a0847ccf506</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>{IncomingMaterial.MaterialType}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text19>
+            <Text20 Ref="33" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.8,0.1,0.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>530e3a12202c49d5a0eeb3bd24072bbb</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>{IncomingMaterial.Size}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text20>
+            <Text21 Ref="34" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.1,0.1,0.8,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>e4990dc1a2964cbdbc01b13dec0d1fc3</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>{IncomingMaterial.Materialcode}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text21>
+            <Text22 Ref="35" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.2,0.1,1.2,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>80e9785fda8c4d9aabffecf5150a9da5</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text22</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <Text>{IncomingMaterial.MaterialName}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text22>
+            <StartPointPrimitive1 Ref="36" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>1,0,0,0</ClientRectangle>
+              <Name>StartPointPrimitive1</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <ReferenceToGuid>8ae50db2f8c249b59571b3bef2617f05</ReferenceToGuid>
+            </StartPointPrimitive1>
+            <HorizontalLinePrimitive1 Ref="37" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,0.4,7.5,0.01</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="38" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive1</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <StartCap Ref="39" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive1>
+            <EndPointPrimitive1 Ref="40" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>1,0.4,0,0</ClientRectangle>
+              <Name>EndPointPrimitive1</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <ReferenceToGuid>8ae50db2f8c249b59571b3bef2617f05</ReferenceToGuid>
+            </EndPointPrimitive1>
+            <StartPointPrimitive3 Ref="41" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>2.6,0,0,0</ClientRectangle>
+              <Name>StartPointPrimitive3</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <ReferenceToGuid>d4dafe4481614a39b9cf6944ab5ff68d</ReferenceToGuid>
+            </StartPointPrimitive3>
+            <EndPointPrimitive3 Ref="42" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>2.6,0.4,0,0</ClientRectangle>
+              <Name>EndPointPrimitive3</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <ReferenceToGuid>d4dafe4481614a39b9cf6944ab5ff68d</ReferenceToGuid>
+            </EndPointPrimitive3>
+            <StartPointPrimitive4 Ref="43" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>3.7,0,0,0</ClientRectangle>
+              <Name>StartPointPrimitive4</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <ReferenceToGuid>8d635300ce3d49509ca3b695c6ee48cd</ReferenceToGuid>
+            </StartPointPrimitive4>
+            <EndPointPrimitive4 Ref="44" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>3.7,0.4,0,0</ClientRectangle>
+              <Name>EndPointPrimitive4</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <ReferenceToGuid>8d635300ce3d49509ca3b695c6ee48cd</ReferenceToGuid>
+            </EndPointPrimitive4>
+            <StartPointPrimitive5 Ref="45" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>4.6,0,0,0</ClientRectangle>
+              <Name>StartPointPrimitive5</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <ReferenceToGuid>b22123b305044a3d90da622c184c3a90</ReferenceToGuid>
+            </StartPointPrimitive5>
+            <EndPointPrimitive5 Ref="46" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>4.6,0.4,0,0</ClientRectangle>
+              <Name>EndPointPrimitive5</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <ReferenceToGuid>b22123b305044a3d90da622c184c3a90</ReferenceToGuid>
+            </EndPointPrimitive5>
+            <StartPointPrimitive6 Ref="47" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>6,0,0,0</ClientRectangle>
+              <Name>StartPointPrimitive6</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <ReferenceToGuid>20992c660c794b8fab1606da2e474f81</ReferenceToGuid>
+            </StartPointPrimitive6>
+            <EndPointPrimitive6 Ref="48" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>6,0.4,0,0</ClientRectangle>
+              <Name>EndPointPrimitive6</Name>
+              <Page isRef="4" />
+              <Parent isRef="29" />
+              <ReferenceToGuid>20992c660c794b8fab1606da2e474f81</ReferenceToGuid>
+            </EndPointPrimitive6>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>IncomingMaterial</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <VerticalLinePrimitive1 Ref="49" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>1,1.4,0.01,0.4</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="50" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>8ae50db2f8c249b59571b3bef2617f05</Guid>
+          <Name>VerticalLinePrimitive1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <StartCap Ref="51" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive1>
+        <VerticalLinePrimitive2 Ref="52" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>2.6,0.6,0.01,0.4</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="53" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>69a78b01d8a941ebae5d1978edddda81</Guid>
+          <Name>VerticalLinePrimitive2</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <StartCap Ref="54" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive2>
+        <VerticalLinePrimitive3 Ref="55" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>2.6,1.4,0.01,0.4</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="56" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>d4dafe4481614a39b9cf6944ab5ff68d</Guid>
+          <Name>VerticalLinePrimitive3</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <StartCap Ref="57" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive3>
+        <VerticalLinePrimitive4 Ref="58" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>3.7,1.4,0.01,0.4</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="59" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>8d635300ce3d49509ca3b695c6ee48cd</Guid>
+          <Name>VerticalLinePrimitive4</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <StartCap Ref="60" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive4>
+        <VerticalLinePrimitive5 Ref="61" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>4.6,1.4,0.01,0.4</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="62" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>b22123b305044a3d90da622c184c3a90</Guid>
+          <Name>VerticalLinePrimitive5</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <StartCap Ref="63" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive5>
+        <VerticalLinePrimitive6 Ref="64" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>6,1.4,0.01,0.4</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="65" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>20992c660c794b8fab1606da2e474f81</Guid>
+          <Name>VerticalLinePrimitive6</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <StartCap Ref="66" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive6>
+        <VerticalLinePrimitive9 Ref="67" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>6,0.6,0.01,0.4</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="68" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>7164478c1f1d45d092c5a09a2e70acd7</Guid>
+          <Name>VerticalLinePrimitive9</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <StartCap Ref="69" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive9>
+        <VerticalLinePrimitive10 Ref="70" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>4.6,0.6,0.01,0.4</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="71" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>6f88b0509cc04afc874804a7038e25a7</Guid>
+          <Name>VerticalLinePrimitive10</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <StartCap Ref="72" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive10>
+        <VerticalLinePrimitive11 Ref="73" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>3.7,0.6,0.01,0.4</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="74" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>2af8891ad04e4983a5453fa92870ae7b</Guid>
+          <Name>VerticalLinePrimitive11</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <StartCap Ref="75" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive11>
+        <VerticalLinePrimitive12 Ref="76" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>1,0.6,0.01,0.4</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="77" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>3582b890f2b5479aaafbc7140d46e299</Guid>
+          <Name>VerticalLinePrimitive12</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <StartCap Ref="78" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive12>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>2f627e1b7c3c4e949a5edee9ba6ac46e</Guid>
+      <Margins>0.39,0.39,0.39,0.39</Margins>
+      <Name>Page1</Name>
+      <PageHeight>11.69</PageHeight>
+      <PageWidth>8.27</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="79" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <Image>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AAAAAAAAAAA/gAAAOEJJTQPyAAAAAAAKAAD///////8AADhCSU0EDQAAAAAABAAAAHg4QklNBBkAAAAAAAQAAAAeOEJJTQPzAAAAAAAJAAAAAAAAAAABADhCSU0nEAAAAAAACgABAAAAAAAAAAI4QklNA/UAAAAAAEgAL2ZmAAEAbGZmAAYAAAAAAAEAL2ZmAAEAoZmaAAYAAAAAAAEAMgAAAAEAWgAAAAYAAAAAAAEANQAAAAEALQAAAAYAAAAAAAE4QklNA/gAAAAAAHAAAP////////////////////////////8D6AAAAAD/////////////////////////////A+gAAAAA/////////////////////////////wPoAAAAAP////////////////////////////8D6AAAOEJJTQQIAAAAAAAQAAAAAQAAAkAAAAJAAAAAADhCSU0EHgAAAAAABAAAAAA4QklNBBoAAAAAAz0AAAAGAAAAAAAAAAAAAAC5AAAAqAAAAAQAdABlAHMAdAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAqAAAALkAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAQAAAAAAAG51bGwAAAACAAAABmJvdW5kc09iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAAAAAAAAAExlZnRsb25nAAAAAAAAAABCdG9tbG9uZwAAALkAAAAAUmdodGxvbmcAAACoAAAABnNsaWNlc1ZsTHMAAAABT2JqYwAAAAEAAAAAAAVzbGljZQAAABIAAAAHc2xpY2VJRGxvbmcAAAAAAAAAB2dyb3VwSURsb25nAAAAAAAAAAZvcmlnaW5lbnVtAAAADEVTbGljZU9yaWdpbgAAAA1hdXRvR2VuZXJhdGVkAAAAAFR5cGVlbnVtAAAACkVTbGljZVR5cGUAAAAASW1nIAAAAAZib3VuZHNPYmpjAAAAAQAAAAAAAFJjdDEAAAAEAAAAAFRvcCBsb25nAAAAAAAAAABMZWZ0bG9uZwAAAAAAAAAAQnRvbWxvbmcAAAC5AAAAAFJnaHRsb25nAAAAqAAAAAN1cmxURVhUAAAAAQAAAAAAAG51bGxURVhUAAAAAQAAAAAAAE1zZ2VURVhU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YXRlRGF0ZT0iMjAxNC0wOS0yOVQwOTo1NzozOSswODowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxNC0wOS0yOVQxMDo0MzoxMiswODowMCIgeG1wOk1vZGlmeURhdGU9IjIwMTQtMDktMjlUMTA6NDM6MTIrMDg6MDAiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QjJDN0FBNTU4MjQ3RTQxMTg3MzhENjgyRTVEMTNGMEIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUY4NkY5RkQ3QjQ3RTQxMUI0Q0U4RjBCMTc2QkMwRDEiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo5Rjg2RjlGRDdCNDdFNDExQjRDRThGMEIxNzZCQzBEMSIgZGM6Zm9ybWF0PSJpbWFnZS9qcGVnIiBjcnM6QWxyZWFkeUFwcGxpZWQ9IlRydWUiIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSI+DQoJCQk8eG1wTU06SGlzdG9yeT4NCgkJCQk8cmRmOlNlcT4NCgkJCQkJPHJkZjpsaSBzdEV2dDphY3Rpb249ImNyZWF0ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6OUY4NkY5RkQ3QjQ3RTQxMUI0Q0U4RjBCMTc2QkMwRDEiIHN0RXZ0OndoZW49IjIwMTQtMDktMjlUMDk6NTc6MzkrMDg6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyIvPg0KCQkJCQk8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6QTA4NkY5RkQ3QjQ3RTQxMUI0Q0U4RjBCMTc2QkMwRDEiIHN0RXZ0OndoZW49IjIwMTQtMDktMjlUMDk6NTc6MzkrMDg6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyIgc3RFdnQ6Y2hhbmdlZD0iLyIvPg0KCQkJCQk8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6QjFDN0FBNTU4MjQ3RTQxMTg3MzhENjgyRTVEMTNGMEIiIHN0RXZ0OndoZW49IjIwMTQtMDktMjlUMTA6NDM6MDMrMDg6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyIgc3RFdnQ6Y2hhbmdlZD0iLyIvPg0KCQkJCQk8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6QjJDN0FBNTU4MjQ3RTQxMTg3MzhENjgyRTVEMTNGMEIiIHN0RXZ0OndoZW49IjIwMTQtMDktMjlUMTA6NDM6MTIrMDg6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyIgc3RFdnQ6Y2hhbmdlZD0iLyIvPg0KCQkJCTwvcmRmOlNlcT4NCgkJCTwveG1wTU06SGlzdG9yeT4NCgkJPC9yZGY6RGVzY3JpcHRpb24+DQoJPC9yZGY6UkRGPg0KPC94OnhtcG1ldGE+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPD94cGFja2V0IGVuZD0ndyc/Pv/iDFhJQ0NfUFJPRklMRQABAQAADEhMaW5vAhAAAG1udHJSR0IgWFlaIAfOAAIACQAGADEAAGFjc3BNU0ZUAAAAAElFQyBzUkdCAAAAAAAAAAAAAAABAAD21gABAAAAANMtSFAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEWNwcnQAAAFQAAAAM2Rlc2MAAAGEAAAAbHd0cHQAAAHwAAAAFGJrcHQAAAIEAAAAFHJYWVoAAAIYAAAAFGdYWVoAAAIsAAAAFGJYWVoAAAJAAAAAFGRtbmQA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L4wXcn27bWEcLCRyXmPmc8fSvSeSaSQ1Zjwp+Xl/gHy4dGd9r+muve/de697917r3v3Xuve/de697917r//V3+Pfuvde9+691737r3Xvfuvde9+691737r3XB0SRSkiK6HhkdQysP6FWBBHvRAIoRjr3Qa726b6u7FxNbgt67G23uPE5ERrXY/KYqjrKKr8U0VTD91RzxSUtT4aiFJEEiMFkRWFiAfaR7G0lOowgN6jH+DpwSSLSjHqmzvD/AITi/wAqTu3+P1WS+L+x9tZjP1GTr581s3+PbFyNNk8n5Wkr6SfYuc23ToaaeXXDBJBLRxkBfCUGj2z9FOhHgXrhfIHI6f8Aq2bWZFDM3EkAt9tSK1+w9Efm/wCEh/8ALMLfsbY31pJ4v292CgC/1ANTMQ1v6k8+/eFunldJ+a/5q9NVh/gPXf8A0CHfyy1VSm299SSAglZe3OwFT/EXSfURcf05Hv3g7nQVvEr/AKT/AIrrWqKvwH9vR9uif+E+38troXI02U2j8Zunoq+kp5KaCvzm2a/svLQxTTU87vBme1sxvCsgrA9OumoH76IWRWCu4Zr93XEh/wAYvnZfQY/zdKfrpUoYVVDSlVAUkfOgz+3q3nYfTfXPW1BjsftPbOOx1PiaKkx+NWOlp0TH0NDTpTUdJj6WCGGix9NS00axxxwRRqiKFAAHtXBY21uSyR958zk9JXlkkJLNU9Ch7WdN9e9+691737r3Xvfuvde9+691737r3Xvfuvde9+691//W3+Pfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3Xvfuvde9+691737r3X//Z</Image>
+        <ImageTransparency>225</ImageTransparency>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="80" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>10/15/2014 10:12:44 AM</ReportChanged>
+  <ReportCreated>8/8/2014 3:50:20 PM</ReportCreated>
+  <ReportFile>C:\inetpub\wwwroot\SJClassic\Reports\Incoming Material.mrt</ReportFile>
+  <ReportGuid>f8755c757cf74dcc9ef5cdc40ce3dfb1</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2011.2.1100</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+        public Stimulsoft.Report.Components.StiPage Page1;
+        public Stimulsoft.Report.Components.StiHeaderBand HeaderBand1;
+        public Stimulsoft.Report.Components.StiText Text2;
+        public Stimulsoft.Report.Components.StiText Text4;
+        public Stimulsoft.Report.Components.StiText Text6;
+        public Stimulsoft.Report.Components.StiText Text8;
+        public Stimulsoft.Report.Components.StiText Text10;
+        public Stimulsoft.Report.Components.StiText Text1;
+        public Stimulsoft.Report.Components.StiText Text3;
+        public Stimulsoft.Report.Components.StiHorizontalLinePrimitive HorizontalLinePrimitive2;
+        public Stimulsoft.Report.Components.StiHorizontalLinePrimitive HorizontalLinePrimitive3;
+        public Stimulsoft.Report.Components.StiStartPointPrimitive StartPointPrimitive2;
+        public Stimulsoft.Report.Components.StiEndPointPrimitive EndPointPrimitive2;
+        public Stimulsoft.Report.Components.StiStartPointPrimitive StartPointPrimitive8;
+        public Stimulsoft.Report.Components.StiEndPointPrimitive EndPointPrimitive8;
+        public Stimulsoft.Report.Components.StiStartPointPrimitive StartPointPrimitive9;
+        public Stimulsoft.Report.Components.StiStartPointPrimitive StartPointPrimitive10;
+        public Stimulsoft.Report.Components.StiEndPointPrimitive EndPointPrimitive10;
+        public Stimulsoft.Report.Components.StiStartPointPrimitive StartPointPrimitive11;
+        public Stimulsoft.Report.Components.StiEndPointPrimitive EndPointPrimitive11;
+        public Stimulsoft.Report.Components.StiStartPointPrimitive StartPointPrimitive12;
+        public Stimulsoft.Report.Components.StiEndPointPrimitive EndPointPrimitive12;
+        public Stimulsoft.Report.Components.StiStartPointPrimitive StartPointPrimitive13;
+        public Stimulsoft.Report.Components.StiEndPointPrimitive EndPointPrimitive13;
+        public Stimulsoft.Report.Components.StiEndPointPrimitive EndPointPrimitive9;
+        public Stimulsoft.Report.Components.StiHorizontalLinePrimitive HorizontalLinePrimitive4;
+        public Stimulsoft.Report.Components.StiDataBand DataBand1;
+        public Stimulsoft.Report.Components.StiText Text11;
+        public Stimulsoft.Report.Components.StiText Text18;
+        public Stimulsoft.Report.Components.StiText Text19;
+        public Stimulsoft.Report.Components.StiText Text20;
+        public Stimulsoft.Report.Components.StiText Text21;
+        public Stimulsoft.Report.Components.StiText Text22;
+        public Stimulsoft.Report.Components.StiStartPointPrimitive StartPointPrimitive1;
+        public Stimulsoft.Report.Components.StiHorizontalLinePrimitive HorizontalLinePrimitive1;
+        public Stimulsoft.Report.Components.StiEndPointPrimitive EndPointPrimitive1;
+        public Stimulsoft.Report.Components.StiStartPointPrimitive StartPointPrimitive3;
+        public Stimulsoft.Report.Components.StiEndPointPrimitive EndPointPrimitive3;
+        public Stimulsoft.Report.Components.StiStartPointPrimitive StartPointPrimitive4;
+        public Stimulsoft.Report.Components.StiEndPointPrimitive EndPointPrimitive4;
+        public Stimulsoft.Report.Components.StiStartPointPrimitive StartPointPrimitive5;
+        public Stimulsoft.Report.Components.StiEndPointPrimitive EndPointPrimitive5;
+        public Stimulsoft.Report.Components.StiStartPointPrimitive StartPointPrimitive6;
+        public Stimulsoft.Report.Components.StiEndPointPrimitive EndPointPrimitive6;
+        public Stimulsoft.Report.Components.StiStartPointPrimitive StartPointPrimitive7;
+        public Stimulsoft.Report.Components.StiEndPointPrimitive EndPointPrimitive7;
+        public Stimulsoft.Report.Components.StiStartPointPrimitive StartPointPrimitive14;
+        public Stimulsoft.Report.Components.StiEndPointPrimitive EndPointPrimitive14;
+        public Stimulsoft.Report.Components.StiVerticalLinePrimitive VerticalLinePrimitive1;
+        public Stimulsoft.Report.Components.StiVerticalLinePrimitive VerticalLinePrimitive2;
+        public Stimulsoft.Report.Components.StiVerticalLinePrimitive VerticalLinePrimitive3;
+        public Stimulsoft.Report.Components.StiVerticalLinePrimitive VerticalLinePrimitive4;
+        public Stimulsoft.Report.Components.StiVerticalLinePrimitive VerticalLinePrimitive5;
+        public Stimulsoft.Report.Components.StiVerticalLinePrimitive VerticalLinePrimitive6;
+        public Stimulsoft.Report.Components.StiVerticalLinePrimitive VerticalLinePrimitive7;
+        public Stimulsoft.Report.Components.StiVerticalLinePrimitive VerticalLinePrimitive8;
+        public Stimulsoft.Report.Components.StiVerticalLinePrimitive VerticalLinePrimitive9;
+        public Stimulsoft.Report.Components.StiVerticalLinePrimitive VerticalLinePrimitive10;
+        public Stimulsoft.Report.Components.StiVerticalLinePrimitive VerticalLinePrimitive11;
+        public Stimulsoft.Report.Components.StiVerticalLinePrimitive VerticalLinePrimitive12;
+        public Stimulsoft.Report.Components.StiVerticalLinePrimitive VerticalLinePrimitive13;
+        public Stimulsoft.Report.Components.StiVerticalLinePrimitive VerticalLinePrimitive14;
+        public Stimulsoft.Report.Components.StiWatermark Page1_Watermark;
+        public Stimulsoft.Report.Print.StiPrinterSettings Report_PrinterSettings;
+        public MaterialMasterDataSource MaterialMaster;
+        
+        public void Text2__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "Material code";
+        }
+        
+        public void Text4__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "Material Name";
+        }
+        
+        public void Text6__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "Material Type";
+        }
+        
+        public void Text8__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "Size";
+        }
+        
+        public void Text10__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "Stock Date";
+        }
+        
+        public void Text1__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "Quantity";
+        }
+        
+        public void Text3__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = "Material Details";
+        }
+        
+        public void Text11__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = ToString(sender, MaterialMaster.Quantity, true);
+        }
+        
+        public void Text18__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = ToString(sender, MaterialMaster.MnfDate, true);
+        }
+        
+        public void Text19__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+          //  e.Value = ToString(sender, MaterialMaster.Bateryid, true);
+        }
+        
+        public void Text20__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = ToString(sender, MaterialMaster.Size, true);
+        }
+        
+        public void Text21__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = ToString(sender, MaterialMaster.Materialcode, true);
+        }
+        
+        public void Text22__GetValue(object sender, Stimulsoft.Report.Events.StiGetValueEventArgs e)
+        {
+            e.Value = ToString(sender, MaterialMaster.MaterialName, true);
+        }
+        
+        private void InitializeComponent()
+        {
+            this.MaterialMaster = new MaterialMasterDataSource();
+            this.NeedsCompiling = false;
+            this.EngineVersion = Stimulsoft.Report.Engine.StiEngineVersion.EngineV2;
+            this.ReferencedAssemblies = new System.String[] {
+                    "System.Dll",
+                    "System.Drawing.Dll",
+                    "System.Windows.Forms.Dll",
+                    "System.Data.Dll",
+                    "System.Xml.Dll",
+                    "Stimulsoft.Controls.Dll",
+                    "Stimulsoft.Base.Dll",
+                    "Stimulsoft.Report.Dll"};
+            this.ReportAlias = "Report";
+            // 
+            // ReportChanged
+            // 
+            this.ReportChanged = new DateTime(2014, 9, 26, 11, 2, 9, 278);
+            // 
+            // ReportCreated
+            // 
+            this.ReportCreated = new DateTime(2014, 8, 8, 15, 50, 20, 0);
+            this.ReportFile = "C:\\inetpub\\wwwroot\\SJClassic\\Reports\\Material.mrt";
+            this.ReportGuid = "bd134c48e35a4ce885883faeaa8bb341";
+            this.ReportName = "Report";
+            this.ReportUnit = Stimulsoft.Report.StiReportUnitType.Inches;
+            this.ReportVersion = "2011.2.1100";
+            this.ScriptLanguage = Stimulsoft.Report.StiReportLanguageType.CSharp;
+            // 
+            // Page1
+            // 
+            this.Page1 = new Stimulsoft.Report.Components.StiPage();
+            this.Page1.Guid = "2f627e1b7c3c4e949a5edee9ba6ac46e";
+            this.Page1.Name = "Page1";
+            this.Page1.PageHeight = 11.69;
+            this.Page1.PageWidth = 8.27;
+            this.Page1.PaperSize = System.Drawing.Printing.PaperKind.A4;
+            this.Page1.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 2, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.Page1.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            // 
+            // HeaderBand1
+            // 
+            this.HeaderBand1 = new Stimulsoft.Report.Components.StiHeaderBand();
+            this.HeaderBand1.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0, 0.2, 7.49, 0.7);
+            this.HeaderBand1.Name = "HeaderBand1";
+            this.HeaderBand1.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.HeaderBand1.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            // 
+            // Text2
+            // 
+            this.Text2 = new Stimulsoft.Report.Components.StiText();
+            this.Text2.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0.1, 0.4, 0.9, 0.2);
+            this.Text2.Guid = "1a78eae47a2b472a8da686802c29fafe";
+            this.Text2.Name = "Text2";
+            this.Text2.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.Text2__GetValue);
+            this.Text2.Type = Stimulsoft.Report.Components.StiSystemTextType.Expression;
+            this.Text2.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.Text2.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.Text2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.Text2.Indicator = null;
+            this.Text2.Interaction = null;
+            this.Text2.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.Text2.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.Text2.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // Text4
+            // 
+            this.Text4 = new Stimulsoft.Report.Components.StiText();
+            this.Text4.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(1.2, 0.4, 1, 0.2);
+            this.Text4.Guid = "7a0b1e42e1f84f62a4bf15774cd98740";
+            this.Text4.Name = "Text4";
+            this.Text4.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.Text4__GetValue);
+            this.Text4.Type = Stimulsoft.Report.Components.StiSystemTextType.Expression;
+            this.Text4.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.Text4.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.Text4.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.Text4.Indicator = null;
+            this.Text4.Interaction = null;
+            this.Text4.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.Text4.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.Text4.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // Text6
+            // 
+            this.Text6 = new Stimulsoft.Report.Components.StiText();
+            this.Text6.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(2.7, 0.4, 0.9, 0.2);
+            this.Text6.Guid = "eb939bcfa78b4da09b6b14d1a3d62565";
+            this.Text6.Name = "Text6";
+            this.Text6.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.Text6__GetValue);
+            this.Text6.Type = Stimulsoft.Report.Components.StiSystemTextType.Expression;
+            this.Text6.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.Text6.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.Text6.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.Text6.Indicator = null;
+            this.Text6.Interaction = null;
+            this.Text6.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.Text6.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.Text6.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // Text8
+            // 
+            this.Text8 = new Stimulsoft.Report.Components.StiText();
+            this.Text8.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(3.9, 0.4, 0.4, 0.2);
+            this.Text8.Guid = "97075c9e063f4b398e880567f9d64524";
+            this.Text8.Name = "Text8";
+            this.Text8.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.Text8__GetValue);
+            this.Text8.Type = Stimulsoft.Report.Components.StiSystemTextType.Expression;
+            this.Text8.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.Text8.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.Text8.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.Text8.Indicator = null;
+            this.Text8.Interaction = null;
+            this.Text8.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.Text8.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.Text8.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // Text10
+            // 
+            this.Text10 = new Stimulsoft.Report.Components.StiText();
+            this.Text10.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(4.9, 0.4, 0.8, 0.2);
+            this.Text10.Guid = "bfb9d9f968a1429da7a969999a0e69fa";
+            this.Text10.Name = "Text10";
+            this.Text10.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.Text10__GetValue);
+            this.Text10.Type = Stimulsoft.Report.Components.StiSystemTextType.Expression;
+            this.Text10.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.Text10.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.Text10.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.Text10.Indicator = null;
+            this.Text10.Interaction = null;
+            this.Text10.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.Text10.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.Text10.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // Text1
+            // 
+            this.Text1 = new Stimulsoft.Report.Components.StiText();
+            this.Text1.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(6.4, 0.4, 0.7, 0.2);
+            this.Text1.Guid = "4ad3c72ce32447ba83dd2ed830966ce1";
+            this.Text1.Name = "Text1";
+            this.Text1.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.Text1__GetValue);
+            this.Text1.Type = Stimulsoft.Report.Components.StiSystemTextType.Expression;
+            this.Text1.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.Text1.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.Text1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.Text1.Indicator = null;
+            this.Text1.Interaction = null;
+            this.Text1.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.Text1.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.Text1.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // Text3
+            // 
+            this.Text3 = new Stimulsoft.Report.Components.StiText();
+            this.Text3.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(3.1, 0, 1.5, 0.2);
+            this.Text3.Guid = "bc60390be8a042278fd1888e196f6143";
+            this.Text3.Name = "Text3";
+            this.Text3.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.Text3__GetValue);
+            this.Text3.Type = Stimulsoft.Report.Components.StiSystemTextType.Expression;
+            this.Text3.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.Text3.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.Text3.Font = new System.Drawing.Font("Berlin Sans FB Demi", 14F, System.Drawing.FontStyle.Bold);
+            this.Text3.Indicator = null;
+            this.Text3.Interaction = null;
+            this.Text3.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.Text3.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.Text3.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // HorizontalLinePrimitive2
+            // 
+            this.HorizontalLinePrimitive2 = new Stimulsoft.Report.Components.StiHorizontalLinePrimitive();
+            this.HorizontalLinePrimitive2.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0, 0.3, 7.4, 0.01);
+            this.HorizontalLinePrimitive2.Color = System.Drawing.Color.Black;
+            this.HorizontalLinePrimitive2.Guid = "9176da48b8c94840bfc330abea5d9d58";
+            this.HorizontalLinePrimitive2.Name = "HorizontalLinePrimitive2";
+            this.HorizontalLinePrimitive2.EndCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            this.HorizontalLinePrimitive2.Interaction = null;
+            this.HorizontalLinePrimitive2.StartCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            // 
+            // HorizontalLinePrimitive3
+            // 
+            this.HorizontalLinePrimitive3 = new Stimulsoft.Report.Components.StiHorizontalLinePrimitive();
+            this.HorizontalLinePrimitive3.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0, 0.7, 7.4, 0.01);
+            this.HorizontalLinePrimitive3.Color = System.Drawing.Color.Black;
+            this.HorizontalLinePrimitive3.Guid = "6a088ed709b9469da88c66ccae833c36";
+            this.HorizontalLinePrimitive3.Name = "HorizontalLinePrimitive3";
+            this.HorizontalLinePrimitive3.EndCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            this.HorizontalLinePrimitive3.Interaction = null;
+            this.HorizontalLinePrimitive3.StartCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            // 
+            // StartPointPrimitive2
+            // 
+            this.StartPointPrimitive2 = new Stimulsoft.Report.Components.StiStartPointPrimitive();
+            this.StartPointPrimitive2.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(2.6, 0.3, 0, 0);
+            this.StartPointPrimitive2.Name = "StartPointPrimitive2";
+            this.StartPointPrimitive2.ReferenceToGuid = "69a78b01d8a941ebae5d1978edddda81";
+            this.StartPointPrimitive2.Guid = null;
+            this.StartPointPrimitive2.Interaction = null;
+            // 
+            // EndPointPrimitive2
+            // 
+            this.EndPointPrimitive2 = new Stimulsoft.Report.Components.StiEndPointPrimitive();
+            this.EndPointPrimitive2.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(2.6, 0.7, 0, 0);
+            this.EndPointPrimitive2.Name = "EndPointPrimitive2";
+            this.EndPointPrimitive2.ReferenceToGuid = "69a78b01d8a941ebae5d1978edddda81";
+            this.EndPointPrimitive2.Guid = null;
+            this.EndPointPrimitive2.Interaction = null;
+            // 
+            // StartPointPrimitive8
+            // 
+            this.StartPointPrimitive8 = new Stimulsoft.Report.Components.StiStartPointPrimitive();
+            this.StartPointPrimitive8.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(7.4, 0, 0, 0);
+            this.StartPointPrimitive8.Name = "StartPointPrimitive8";
+            this.StartPointPrimitive8.ReferenceToGuid = "999cff79e7b144b6abc8468a19c4db78";
+            this.StartPointPrimitive8.Guid = null;
+            this.StartPointPrimitive8.Interaction = null;
+            // 
+            // EndPointPrimitive8
+            // 
+            this.EndPointPrimitive8 = new Stimulsoft.Report.Components.StiEndPointPrimitive();
+            this.EndPointPrimitive8.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(7.4, 0.7, 0, 0);
+            this.EndPointPrimitive8.Name = "EndPointPrimitive8";
+            this.EndPointPrimitive8.ReferenceToGuid = "999cff79e7b144b6abc8468a19c4db78";
+            this.EndPointPrimitive8.Guid = null;
+            this.EndPointPrimitive8.Interaction = null;
+            // 
+            // StartPointPrimitive9
+            // 
+            this.StartPointPrimitive9 = new Stimulsoft.Report.Components.StiStartPointPrimitive();
+            this.StartPointPrimitive9.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(6, 0.3, 0, 0);
+            this.StartPointPrimitive9.Name = "StartPointPrimitive9";
+            this.StartPointPrimitive9.ReferenceToGuid = "7164478c1f1d45d092c5a09a2e70acd7";
+            this.StartPointPrimitive9.Guid = null;
+            this.StartPointPrimitive9.Interaction = null;
+            // 
+            // StartPointPrimitive10
+            // 
+            this.StartPointPrimitive10 = new Stimulsoft.Report.Components.StiStartPointPrimitive();
+            this.StartPointPrimitive10.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(4.6, 0.3, 0, 0);
+            this.StartPointPrimitive10.Name = "StartPointPrimitive10";
+            this.StartPointPrimitive10.ReferenceToGuid = "6f88b0509cc04afc874804a7038e25a7";
+            this.StartPointPrimitive10.Guid = null;
+            this.StartPointPrimitive10.Interaction = null;
+            // 
+            // EndPointPrimitive10
+            // 
+            this.EndPointPrimitive10 = new Stimulsoft.Report.Components.StiEndPointPrimitive();
+            this.EndPointPrimitive10.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(4.6, 0.7, 0, 0);
+            this.EndPointPrimitive10.Name = "EndPointPrimitive10";
+            this.EndPointPrimitive10.ReferenceToGuid = "6f88b0509cc04afc874804a7038e25a7";
+            this.EndPointPrimitive10.Guid = null;
+            this.EndPointPrimitive10.Interaction = null;
+            // 
+            // StartPointPrimitive11
+            // 
+            this.StartPointPrimitive11 = new Stimulsoft.Report.Components.StiStartPointPrimitive();
+            this.StartPointPrimitive11.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(3.7, 0.3, 0, 0);
+            this.StartPointPrimitive11.Name = "StartPointPrimitive11";
+            this.StartPointPrimitive11.ReferenceToGuid = "2af8891ad04e4983a5453fa92870ae7b";
+            this.StartPointPrimitive11.Guid = null;
+            this.StartPointPrimitive11.Interaction = null;
+            // 
+            // EndPointPrimitive11
+            // 
+            this.EndPointPrimitive11 = new Stimulsoft.Report.Components.StiEndPointPrimitive();
+            this.EndPointPrimitive11.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(3.7, 0.7, 0, 0);
+            this.EndPointPrimitive11.Name = "EndPointPrimitive11";
+            this.EndPointPrimitive11.ReferenceToGuid = "2af8891ad04e4983a5453fa92870ae7b";
+            this.EndPointPrimitive11.Guid = null;
+            this.EndPointPrimitive11.Interaction = null;
+            // 
+            // StartPointPrimitive12
+            // 
+            this.StartPointPrimitive12 = new Stimulsoft.Report.Components.StiStartPointPrimitive();
+            this.StartPointPrimitive12.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(1, 0.3, 0, 0);
+            this.StartPointPrimitive12.Name = "StartPointPrimitive12";
+            this.StartPointPrimitive12.ReferenceToGuid = "3582b890f2b5479aaafbc7140d46e299";
+            this.StartPointPrimitive12.Guid = null;
+            this.StartPointPrimitive12.Interaction = null;
+            // 
+            // EndPointPrimitive12
+            // 
+            this.EndPointPrimitive12 = new Stimulsoft.Report.Components.StiEndPointPrimitive();
+            this.EndPointPrimitive12.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(1, 0.7, 0, 0);
+            this.EndPointPrimitive12.Name = "EndPointPrimitive12";
+            this.EndPointPrimitive12.ReferenceToGuid = "3582b890f2b5479aaafbc7140d46e299";
+            this.EndPointPrimitive12.Guid = null;
+            this.EndPointPrimitive12.Interaction = null;
+            // 
+            // StartPointPrimitive13
+            // 
+            this.StartPointPrimitive13 = new Stimulsoft.Report.Components.StiStartPointPrimitive();
+            this.StartPointPrimitive13.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0, 0, 0, 0);
+            this.StartPointPrimitive13.Name = "StartPointPrimitive13";
+            this.StartPointPrimitive13.ReferenceToGuid = "7695d49785c14f5f9ebbafc30f3c42a3";
+            this.StartPointPrimitive13.Guid = null;
+            this.StartPointPrimitive13.Interaction = null;
+            // 
+            // EndPointPrimitive13
+            // 
+            this.EndPointPrimitive13 = new Stimulsoft.Report.Components.StiEndPointPrimitive();
+            this.EndPointPrimitive13.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0, 0.7, 0, 0);
+            this.EndPointPrimitive13.Name = "EndPointPrimitive13";
+            this.EndPointPrimitive13.ReferenceToGuid = "7695d49785c14f5f9ebbafc30f3c42a3";
+            this.EndPointPrimitive13.Guid = null;
+            this.EndPointPrimitive13.Interaction = null;
+            // 
+            // EndPointPrimitive9
+            // 
+            this.EndPointPrimitive9 = new Stimulsoft.Report.Components.StiEndPointPrimitive();
+            this.EndPointPrimitive9.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(6, 0.7, 0, 0);
+            this.EndPointPrimitive9.Name = "EndPointPrimitive9";
+            this.EndPointPrimitive9.ReferenceToGuid = "7164478c1f1d45d092c5a09a2e70acd7";
+            this.EndPointPrimitive9.Guid = null;
+            this.EndPointPrimitive9.Interaction = null;
+            // 
+            // HorizontalLinePrimitive4
+            // 
+            this.HorizontalLinePrimitive4 = new Stimulsoft.Report.Components.StiHorizontalLinePrimitive();
+            this.HorizontalLinePrimitive4.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0, 0, 7.4, 0.01);
+            this.HorizontalLinePrimitive4.Color = System.Drawing.Color.Black;
+            this.HorizontalLinePrimitive4.Guid = "c997851310c747a2882ea4776fcaa2d3";
+            this.HorizontalLinePrimitive4.Name = "HorizontalLinePrimitive4";
+            this.HorizontalLinePrimitive4.EndCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            this.HorizontalLinePrimitive4.Interaction = null;
+            this.HorizontalLinePrimitive4.StartCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            this.HeaderBand1.Guid = null;
+            this.HeaderBand1.Interaction = null;
+            // 
+            // DataBand1
+            // 
+            this.DataBand1 = new Stimulsoft.Report.Components.StiDataBand();
+            this.DataBand1.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0, 1.3, 7.49, 0.4);
+            this.DataBand1.DataSourceName = "MaterialMaster";
+            this.DataBand1.Name = "DataBand1";
+            this.DataBand1.Sort = new System.String[0];
+            this.DataBand1.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.DataBand1.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.DataBand1.BusinessObjectGuid = null;
+            // 
+            // Text11
+            // 
+            this.Text11 = new Stimulsoft.Report.Components.StiText();
+            this.Text11.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(6.1, 0.1, 1.2, 0.2);
+            this.Text11.Name = "Text11";
+            this.Text11.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.Text11__GetValue);
+            this.Text11.Type = Stimulsoft.Report.Components.StiSystemTextType.Expression;
+            this.Text11.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.Text11.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.Text11.Font = new System.Drawing.Font("Arial", 10F);
+            this.Text11.Guid = null;
+            this.Text11.Indicator = null;
+            this.Text11.Interaction = null;
+            this.Text11.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.Text11.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.Text11.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // Text18
+            // 
+            this.Text18 = new Stimulsoft.Report.Components.StiText();
+            this.Text18.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(4.7, 0.1, 1.2, 0.2);
+            this.Text18.Guid = "c9c8705f21ae4df98ac063c8f94e4fb7";
+            this.Text18.Name = "Text18";
+            this.Text18.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.Text18__GetValue);
+            this.Text18.Type = Stimulsoft.Report.Components.StiSystemTextType.Expression;
+            this.Text18.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.Text18.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.Text18.Font = new System.Drawing.Font("Arial", 10F);
+            this.Text18.Indicator = null;
+            this.Text18.Interaction = null;
+            this.Text18.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.Text18.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.Text18.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // Text19
+            // 
+            this.Text19 = new Stimulsoft.Report.Components.StiText();
+            this.Text19.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(2.8, 0.1, 0.6, 0.2);
+            this.Text19.Guid = "8b060e3d5d4041928b0d1a0847ccf506";
+            this.Text19.Name = "Text19";
+            this.Text19.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.Text19__GetValue);
+            this.Text19.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.Text19.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.Text19.Font = new System.Drawing.Font("Arial", 10F);
+            this.Text19.Indicator = null;
+            this.Text19.Interaction = null;
+            this.Text19.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.Text19.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.Text19.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // Text20
+            // 
+            this.Text20 = new Stimulsoft.Report.Components.StiText();
+            this.Text20.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(3.8, 0.1, 0.6, 0.2);
+            this.Text20.Guid = "530e3a12202c49d5a0eeb3bd24072bbb";
+            this.Text20.Name = "Text20";
+            this.Text20.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.Text20__GetValue);
+            this.Text20.Type = Stimulsoft.Report.Components.StiSystemTextType.Expression;
+            this.Text20.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.Text20.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.Text20.Font = new System.Drawing.Font("Arial", 10F);
+            this.Text20.Indicator = null;
+            this.Text20.Interaction = null;
+            this.Text20.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.Text20.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.Text20.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // Text21
+            // 
+            this.Text21 = new Stimulsoft.Report.Components.StiText();
+            this.Text21.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0.1, 0.1, 0.8, 0.2);
+            this.Text21.Guid = "e4990dc1a2964cbdbc01b13dec0d1fc3";
+            this.Text21.Name = "Text21";
+            this.Text21.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.Text21__GetValue);
+            this.Text21.Type = Stimulsoft.Report.Components.StiSystemTextType.Expression;
+            this.Text21.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.Text21.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.Text21.Font = new System.Drawing.Font("Arial", 10F);
+            this.Text21.Indicator = null;
+            this.Text21.Interaction = null;
+            this.Text21.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.Text21.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.Text21.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // Text22
+            // 
+            this.Text22 = new Stimulsoft.Report.Components.StiText();
+            this.Text22.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(1.2, 0.1, 1.2, 0.2);
+            this.Text22.Guid = "80e9785fda8c4d9aabffecf5150a9da5";
+            this.Text22.Name = "Text22";
+            this.Text22.GetValue += new Stimulsoft.Report.Events.StiGetValueEventHandler(this.Text22__GetValue);
+            this.Text22.Border = new Stimulsoft.Base.Drawing.StiBorder(Stimulsoft.Base.Drawing.StiBorderSides.None, System.Drawing.Color.Black, 1, Stimulsoft.Base.Drawing.StiPenStyle.Solid, false, 4, new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black), false);
+            this.Text22.Brush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Transparent);
+            this.Text22.Font = new System.Drawing.Font("Arial", 10F);
+            this.Text22.Indicator = null;
+            this.Text22.Interaction = null;
+            this.Text22.Margins = new Stimulsoft.Report.Components.StiMargins(0, 0, 0, 0);
+            this.Text22.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.Black);
+            this.Text22.TextOptions = new Stimulsoft.Base.Drawing.StiTextOptions(false, false, false, 0F, System.Drawing.Text.HotkeyPrefix.None, System.Drawing.StringTrimming.None);
+            // 
+            // StartPointPrimitive1
+            // 
+            this.StartPointPrimitive1 = new Stimulsoft.Report.Components.StiStartPointPrimitive();
+            this.StartPointPrimitive1.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(1, 0, 0, 0);
+            this.StartPointPrimitive1.Name = "StartPointPrimitive1";
+            this.StartPointPrimitive1.ReferenceToGuid = "8ae50db2f8c249b59571b3bef2617f05";
+            this.StartPointPrimitive1.Guid = null;
+            this.StartPointPrimitive1.Interaction = null;
+            // 
+            // HorizontalLinePrimitive1
+            // 
+            this.HorizontalLinePrimitive1 = new Stimulsoft.Report.Components.StiHorizontalLinePrimitive();
+            this.HorizontalLinePrimitive1.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0, 0.4, 7.4, 0.01);
+            this.HorizontalLinePrimitive1.Color = System.Drawing.Color.Black;
+            this.HorizontalLinePrimitive1.Name = "HorizontalLinePrimitive1";
+            this.HorizontalLinePrimitive1.EndCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            this.HorizontalLinePrimitive1.Guid = null;
+            this.HorizontalLinePrimitive1.Interaction = null;
+            this.HorizontalLinePrimitive1.StartCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            // 
+            // EndPointPrimitive1
+            // 
+            this.EndPointPrimitive1 = new Stimulsoft.Report.Components.StiEndPointPrimitive();
+            this.EndPointPrimitive1.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(1, 0.4, 0, 0);
+            this.EndPointPrimitive1.Name = "EndPointPrimitive1";
+            this.EndPointPrimitive1.ReferenceToGuid = "8ae50db2f8c249b59571b3bef2617f05";
+            this.EndPointPrimitive1.Guid = null;
+            this.EndPointPrimitive1.Interaction = null;
+            // 
+            // StartPointPrimitive3
+            // 
+            this.StartPointPrimitive3 = new Stimulsoft.Report.Components.StiStartPointPrimitive();
+            this.StartPointPrimitive3.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(2.6, 0, 0, 0);
+            this.StartPointPrimitive3.Name = "StartPointPrimitive3";
+            this.StartPointPrimitive3.ReferenceToGuid = "d4dafe4481614a39b9cf6944ab5ff68d";
+            this.StartPointPrimitive3.Guid = null;
+            this.StartPointPrimitive3.Interaction = null;
+            // 
+            // EndPointPrimitive3
+            // 
+            this.EndPointPrimitive3 = new Stimulsoft.Report.Components.StiEndPointPrimitive();
+            this.EndPointPrimitive3.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(2.6, 0.4, 0, 0);
+            this.EndPointPrimitive3.Name = "EndPointPrimitive3";
+            this.EndPointPrimitive3.ReferenceToGuid = "d4dafe4481614a39b9cf6944ab5ff68d";
+            this.EndPointPrimitive3.Guid = null;
+            this.EndPointPrimitive3.Interaction = null;
+            // 
+            // StartPointPrimitive4
+            // 
+            this.StartPointPrimitive4 = new Stimulsoft.Report.Components.StiStartPointPrimitive();
+            this.StartPointPrimitive4.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(3.7, 0, 0, 0);
+            this.StartPointPrimitive4.Name = "StartPointPrimitive4";
+            this.StartPointPrimitive4.ReferenceToGuid = "8d635300ce3d49509ca3b695c6ee48cd";
+            this.StartPointPrimitive4.Guid = null;
+            this.StartPointPrimitive4.Interaction = null;
+            // 
+            // EndPointPrimitive4
+            // 
+            this.EndPointPrimitive4 = new Stimulsoft.Report.Components.StiEndPointPrimitive();
+            this.EndPointPrimitive4.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(3.7, 0.4, 0, 0);
+            this.EndPointPrimitive4.Name = "EndPointPrimitive4";
+            this.EndPointPrimitive4.ReferenceToGuid = "8d635300ce3d49509ca3b695c6ee48cd";
+            this.EndPointPrimitive4.Guid = null;
+            this.EndPointPrimitive4.Interaction = null;
+            // 
+            // StartPointPrimitive5
+            // 
+            this.StartPointPrimitive5 = new Stimulsoft.Report.Components.StiStartPointPrimitive();
+            this.StartPointPrimitive5.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(4.6, 0, 0, 0);
+            this.StartPointPrimitive5.Name = "StartPointPrimitive5";
+            this.StartPointPrimitive5.ReferenceToGuid = "b22123b305044a3d90da622c184c3a90";
+            this.StartPointPrimitive5.Guid = null;
+            this.StartPointPrimitive5.Interaction = null;
+            // 
+            // EndPointPrimitive5
+            // 
+            this.EndPointPrimitive5 = new Stimulsoft.Report.Components.StiEndPointPrimitive();
+            this.EndPointPrimitive5.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(4.6, 0.4, 0, 0);
+            this.EndPointPrimitive5.Name = "EndPointPrimitive5";
+            this.EndPointPrimitive5.ReferenceToGuid = "b22123b305044a3d90da622c184c3a90";
+            this.EndPointPrimitive5.Guid = null;
+            this.EndPointPrimitive5.Interaction = null;
+            // 
+            // StartPointPrimitive6
+            // 
+            this.StartPointPrimitive6 = new Stimulsoft.Report.Components.StiStartPointPrimitive();
+            this.StartPointPrimitive6.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(6, 0, 0, 0);
+            this.StartPointPrimitive6.Name = "StartPointPrimitive6";
+            this.StartPointPrimitive6.ReferenceToGuid = "20992c660c794b8fab1606da2e474f81";
+            this.StartPointPrimitive6.Guid = null;
+            this.StartPointPrimitive6.Interaction = null;
+            // 
+            // EndPointPrimitive6
+            // 
+            this.EndPointPrimitive6 = new Stimulsoft.Report.Components.StiEndPointPrimitive();
+            this.EndPointPrimitive6.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(6, 0.4, 0, 0);
+            this.EndPointPrimitive6.Name = "EndPointPrimitive6";
+            this.EndPointPrimitive6.ReferenceToGuid = "20992c660c794b8fab1606da2e474f81";
+            this.EndPointPrimitive6.Guid = null;
+            this.EndPointPrimitive6.Interaction = null;
+            // 
+            // StartPointPrimitive7
+            // 
+            this.StartPointPrimitive7 = new Stimulsoft.Report.Components.StiStartPointPrimitive();
+            this.StartPointPrimitive7.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(7.4, 0, 0, 0);
+            this.StartPointPrimitive7.Name = "StartPointPrimitive7";
+            this.StartPointPrimitive7.ReferenceToGuid = "6e172f62cff244b7b2ac9e3bd87eb9ea";
+            this.StartPointPrimitive7.Guid = null;
+            this.StartPointPrimitive7.Interaction = null;
+            // 
+            // EndPointPrimitive7
+            // 
+            this.EndPointPrimitive7 = new Stimulsoft.Report.Components.StiEndPointPrimitive();
+            this.EndPointPrimitive7.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(7.4, 0.4, 0, 0);
+            this.EndPointPrimitive7.Name = "EndPointPrimitive7";
+            this.EndPointPrimitive7.ReferenceToGuid = "6e172f62cff244b7b2ac9e3bd87eb9ea";
+            this.EndPointPrimitive7.Guid = null;
+            this.EndPointPrimitive7.Interaction = null;
+            // 
+            // StartPointPrimitive14
+            // 
+            this.StartPointPrimitive14 = new Stimulsoft.Report.Components.StiStartPointPrimitive();
+            this.StartPointPrimitive14.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0, 0, 0, 0);
+            this.StartPointPrimitive14.Name = "StartPointPrimitive14";
+            this.StartPointPrimitive14.ReferenceToGuid = "f8959bef51884d91b2724900f92aaa8b";
+            this.StartPointPrimitive14.Guid = null;
+            this.StartPointPrimitive14.Interaction = null;
+            // 
+            // EndPointPrimitive14
+            // 
+            this.EndPointPrimitive14 = new Stimulsoft.Report.Components.StiEndPointPrimitive();
+            this.EndPointPrimitive14.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0, 0.4, 0, 0);
+            this.EndPointPrimitive14.Name = "EndPointPrimitive14";
+            this.EndPointPrimitive14.ReferenceToGuid = "f8959bef51884d91b2724900f92aaa8b";
+            this.EndPointPrimitive14.Guid = null;
+            this.EndPointPrimitive14.Interaction = null;
+            this.DataBand1.DataRelationName = null;
+            this.DataBand1.Guid = null;
+            this.DataBand1.Interaction = null;
+            this.DataBand1.MasterComponent = null;
+            // 
+            // VerticalLinePrimitive1
+            // 
+            this.VerticalLinePrimitive1 = new Stimulsoft.Report.Components.StiVerticalLinePrimitive();
+            this.VerticalLinePrimitive1.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(1, 1.3, 0.01, 0.4);
+            this.VerticalLinePrimitive1.Color = System.Drawing.Color.Black;
+            this.VerticalLinePrimitive1.Guid = "8ae50db2f8c249b59571b3bef2617f05";
+            this.VerticalLinePrimitive1.Name = "VerticalLinePrimitive1";
+            this.VerticalLinePrimitive1.EndCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            this.VerticalLinePrimitive1.Interaction = null;
+            this.VerticalLinePrimitive1.StartCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            // 
+            // VerticalLinePrimitive2
+            // 
+            this.VerticalLinePrimitive2 = new Stimulsoft.Report.Components.StiVerticalLinePrimitive();
+            this.VerticalLinePrimitive2.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(2.6, 0.5, 0.01, 0.4);
+            this.VerticalLinePrimitive2.Color = System.Drawing.Color.Black;
+            this.VerticalLinePrimitive2.Guid = "69a78b01d8a941ebae5d1978edddda81";
+            this.VerticalLinePrimitive2.Name = "VerticalLinePrimitive2";
+            this.VerticalLinePrimitive2.EndCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            this.VerticalLinePrimitive2.Interaction = null;
+            this.VerticalLinePrimitive2.StartCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            // 
+            // VerticalLinePrimitive3
+            // 
+            this.VerticalLinePrimitive3 = new Stimulsoft.Report.Components.StiVerticalLinePrimitive();
+            this.VerticalLinePrimitive3.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(2.6, 1.3, 0.01, 0.4);
+            this.VerticalLinePrimitive3.Color = System.Drawing.Color.Black;
+            this.VerticalLinePrimitive3.Guid = "d4dafe4481614a39b9cf6944ab5ff68d";
+            this.VerticalLinePrimitive3.Name = "VerticalLinePrimitive3";
+            this.VerticalLinePrimitive3.EndCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            this.VerticalLinePrimitive3.Interaction = null;
+            this.VerticalLinePrimitive3.StartCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            // 
+            // VerticalLinePrimitive4
+            // 
+            this.VerticalLinePrimitive4 = new Stimulsoft.Report.Components.StiVerticalLinePrimitive();
+            this.VerticalLinePrimitive4.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(3.7, 1.3, 0.01, 0.4);
+            this.VerticalLinePrimitive4.Color = System.Drawing.Color.Black;
+            this.VerticalLinePrimitive4.Guid = "8d635300ce3d49509ca3b695c6ee48cd";
+            this.VerticalLinePrimitive4.Name = "VerticalLinePrimitive4";
+            this.VerticalLinePrimitive4.EndCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            this.VerticalLinePrimitive4.Interaction = null;
+            this.VerticalLinePrimitive4.StartCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            // 
+            // VerticalLinePrimitive5
+            // 
+            this.VerticalLinePrimitive5 = new Stimulsoft.Report.Components.StiVerticalLinePrimitive();
+            this.VerticalLinePrimitive5.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(4.6, 1.3, 0.01, 0.4);
+            this.VerticalLinePrimitive5.Color = System.Drawing.Color.Black;
+            this.VerticalLinePrimitive5.Guid = "b22123b305044a3d90da622c184c3a90";
+            this.VerticalLinePrimitive5.Name = "VerticalLinePrimitive5";
+            this.VerticalLinePrimitive5.EndCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            this.VerticalLinePrimitive5.Interaction = null;
+            this.VerticalLinePrimitive5.StartCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            // 
+            // VerticalLinePrimitive6
+            // 
+            this.VerticalLinePrimitive6 = new Stimulsoft.Report.Components.StiVerticalLinePrimitive();
+            this.VerticalLinePrimitive6.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(6, 1.3, 0.01, 0.4);
+            this.VerticalLinePrimitive6.Color = System.Drawing.Color.Black;
+            this.VerticalLinePrimitive6.Guid = "20992c660c794b8fab1606da2e474f81";
+            this.VerticalLinePrimitive6.Name = "VerticalLinePrimitive6";
+            this.VerticalLinePrimitive6.EndCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            this.VerticalLinePrimitive6.Interaction = null;
+            this.VerticalLinePrimitive6.StartCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            // 
+            // VerticalLinePrimitive7
+            // 
+            this.VerticalLinePrimitive7 = new Stimulsoft.Report.Components.StiVerticalLinePrimitive();
+            this.VerticalLinePrimitive7.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(7.4, 1.3, 0.01, 0.4);
+            this.VerticalLinePrimitive7.Color = System.Drawing.Color.Black;
+            this.VerticalLinePrimitive7.Guid = "6e172f62cff244b7b2ac9e3bd87eb9ea";
+            this.VerticalLinePrimitive7.Name = "VerticalLinePrimitive7";
+            this.VerticalLinePrimitive7.EndCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            this.VerticalLinePrimitive7.Interaction = null;
+            this.VerticalLinePrimitive7.StartCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            // 
+            // VerticalLinePrimitive8
+            // 
+            this.VerticalLinePrimitive8 = new Stimulsoft.Report.Components.StiVerticalLinePrimitive();
+            this.VerticalLinePrimitive8.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(7.4, 0.2, 0.01, 0.7);
+            this.VerticalLinePrimitive8.Color = System.Drawing.Color.Black;
+            this.VerticalLinePrimitive8.Guid = "999cff79e7b144b6abc8468a19c4db78";
+            this.VerticalLinePrimitive8.Name = "VerticalLinePrimitive8";
+            this.VerticalLinePrimitive8.EndCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            this.VerticalLinePrimitive8.Interaction = null;
+            this.VerticalLinePrimitive8.StartCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            // 
+            // VerticalLinePrimitive9
+            // 
+            this.VerticalLinePrimitive9 = new Stimulsoft.Report.Components.StiVerticalLinePrimitive();
+            this.VerticalLinePrimitive9.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(6, 0.5, 0.01, 0.4);
+            this.VerticalLinePrimitive9.Color = System.Drawing.Color.Black;
+            this.VerticalLinePrimitive9.Guid = "7164478c1f1d45d092c5a09a2e70acd7";
+            this.VerticalLinePrimitive9.Name = "VerticalLinePrimitive9";
+            this.VerticalLinePrimitive9.EndCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            this.VerticalLinePrimitive9.Interaction = null;
+            this.VerticalLinePrimitive9.StartCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            // 
+            // VerticalLinePrimitive10
+            // 
+            this.VerticalLinePrimitive10 = new Stimulsoft.Report.Components.StiVerticalLinePrimitive();
+            this.VerticalLinePrimitive10.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(4.6, 0.5, 0.01, 0.4);
+            this.VerticalLinePrimitive10.Color = System.Drawing.Color.Black;
+            this.VerticalLinePrimitive10.Guid = "6f88b0509cc04afc874804a7038e25a7";
+            this.VerticalLinePrimitive10.Name = "VerticalLinePrimitive10";
+            this.VerticalLinePrimitive10.EndCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            this.VerticalLinePrimitive10.Interaction = null;
+            this.VerticalLinePrimitive10.StartCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            // 
+            // VerticalLinePrimitive11
+            // 
+            this.VerticalLinePrimitive11 = new Stimulsoft.Report.Components.StiVerticalLinePrimitive();
+            this.VerticalLinePrimitive11.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(3.7, 0.5, 0.01, 0.4);
+            this.VerticalLinePrimitive11.Color = System.Drawing.Color.Black;
+            this.VerticalLinePrimitive11.Guid = "2af8891ad04e4983a5453fa92870ae7b";
+            this.VerticalLinePrimitive11.Name = "VerticalLinePrimitive11";
+            this.VerticalLinePrimitive11.EndCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            this.VerticalLinePrimitive11.Interaction = null;
+            this.VerticalLinePrimitive11.StartCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            // 
+            // VerticalLinePrimitive12
+            // 
+            this.VerticalLinePrimitive12 = new Stimulsoft.Report.Components.StiVerticalLinePrimitive();
+            this.VerticalLinePrimitive12.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(1, 0.5, 0.01, 0.4);
+            this.VerticalLinePrimitive12.Color = System.Drawing.Color.Black;
+            this.VerticalLinePrimitive12.Guid = "3582b890f2b5479aaafbc7140d46e299";
+            this.VerticalLinePrimitive12.Name = "VerticalLinePrimitive12";
+            this.VerticalLinePrimitive12.EndCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            this.VerticalLinePrimitive12.Interaction = null;
+            this.VerticalLinePrimitive12.StartCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            // 
+            // VerticalLinePrimitive13
+            // 
+            this.VerticalLinePrimitive13 = new Stimulsoft.Report.Components.StiVerticalLinePrimitive();
+            this.VerticalLinePrimitive13.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0, 0.2, 0.01, 0.7);
+            this.VerticalLinePrimitive13.Color = System.Drawing.Color.Black;
+            this.VerticalLinePrimitive13.Guid = "7695d49785c14f5f9ebbafc30f3c42a3";
+            this.VerticalLinePrimitive13.Name = "VerticalLinePrimitive13";
+            this.VerticalLinePrimitive13.EndCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            this.VerticalLinePrimitive13.Interaction = null;
+            this.VerticalLinePrimitive13.StartCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            // 
+            // VerticalLinePrimitive14
+            // 
+            this.VerticalLinePrimitive14 = new Stimulsoft.Report.Components.StiVerticalLinePrimitive();
+            this.VerticalLinePrimitive14.ClientRectangle = new Stimulsoft.Base.Drawing.RectangleD(0, 1.3, 0.01, 0.4);
+            this.VerticalLinePrimitive14.Color = System.Drawing.Color.Black;
+            this.VerticalLinePrimitive14.Guid = "f8959bef51884d91b2724900f92aaa8b";
+            this.VerticalLinePrimitive14.Name = "VerticalLinePrimitive14";
+            this.VerticalLinePrimitive14.EndCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            this.VerticalLinePrimitive14.Interaction = null;
+            this.VerticalLinePrimitive14.StartCap = new Stimulsoft.Base.Drawing.StiCap(10, Stimulsoft.Base.Drawing.StiCapStyle.None, 10, true, System.Drawing.Color.Black);
+            this.Page1.ExcelSheetValue = null;
+            this.Page1.Interaction = null;
+            this.Page1.Margins = new Stimulsoft.Report.Components.StiMargins(0.39, 0.39, 0.39, 0.39);
+            this.Page1_Watermark = new Stimulsoft.Report.Components.StiWatermark();
+            this.Page1_Watermark.Font = new System.Drawing.Font("Arial", 100F);
+            this.Page1_Watermark.Image = null;
+            this.Page1_Watermark.TextBrush = new Stimulsoft.Base.Drawing.StiSolidBrush(System.Drawing.Color.FromArgb(50, 0, 0, 0));
+            this.Report_PrinterSettings = new Stimulsoft.Report.Print.StiPrinterSettings();
+            this.PrinterSettings = this.Report_PrinterSettings;
+            this.Page1.Report = this;
+            this.Page1.Watermark = this.Page1_Watermark;
+            this.HeaderBand1.Page = this.Page1;
+            this.HeaderBand1.Parent = this.Page1;
+            this.Text2.Page = this.Page1;
+            this.Text2.Parent = this.HeaderBand1;
+            this.Text4.Page = this.Page1;
+            this.Text4.Parent = this.HeaderBand1;
+            this.Text6.Page = this.Page1;
+            this.Text6.Parent = this.HeaderBand1;
+            this.Text8.Page = this.Page1;
+            this.Text8.Parent = this.HeaderBand1;
+            this.Text10.Page = this.Page1;
+            this.Text10.Parent = this.HeaderBand1;
+            this.Text1.Page = this.Page1;
+            this.Text1.Parent = this.HeaderBand1;
+            this.Text3.Page = this.Page1;
+            this.Text3.Parent = this.HeaderBand1;
+            this.HorizontalLinePrimitive2.Page = this.Page1;
+            this.HorizontalLinePrimitive2.Parent = this.HeaderBand1;
+            this.HorizontalLinePrimitive3.Page = this.Page1;
+            this.HorizontalLinePrimitive3.Parent = this.HeaderBand1;
+            this.StartPointPrimitive2.Page = this.Page1;
+            this.StartPointPrimitive2.Parent = this.HeaderBand1;
+            this.EndPointPrimitive2.Page = this.Page1;
+            this.EndPointPrimitive2.Parent = this.HeaderBand1;
+            this.StartPointPrimitive8.Page = this.Page1;
+            this.StartPointPrimitive8.Parent = this.HeaderBand1;
+            this.EndPointPrimitive8.Page = this.Page1;
+            this.EndPointPrimitive8.Parent = this.HeaderBand1;
+            this.StartPointPrimitive9.Page = this.Page1;
+            this.StartPointPrimitive9.Parent = this.HeaderBand1;
+            this.StartPointPrimitive10.Page = this.Page1;
+            this.StartPointPrimitive10.Parent = this.HeaderBand1;
+            this.EndPointPrimitive10.Page = this.Page1;
+            this.EndPointPrimitive10.Parent = this.HeaderBand1;
+            this.StartPointPrimitive11.Page = this.Page1;
+            this.StartPointPrimitive11.Parent = this.HeaderBand1;
+            this.EndPointPrimitive11.Page = this.Page1;
+            this.EndPointPrimitive11.Parent = this.HeaderBand1;
+            this.StartPointPrimitive12.Page = this.Page1;
+            this.StartPointPrimitive12.Parent = this.HeaderBand1;
+            this.EndPointPrimitive12.Page = this.Page1;
+            this.EndPointPrimitive12.Parent = this.HeaderBand1;
+            this.StartPointPrimitive13.Page = this.Page1;
+            this.StartPointPrimitive13.Parent = this.HeaderBand1;
+            this.EndPointPrimitive13.Page = this.Page1;
+            this.EndPointPrimitive13.Parent = this.HeaderBand1;
+            this.EndPointPrimitive9.Page = this.Page1;
+            this.EndPointPrimitive9.Parent = this.HeaderBand1;
+            this.HorizontalLinePrimitive4.Page = this.Page1;
+            this.HorizontalLinePrimitive4.Parent = this.HeaderBand1;
+            this.DataBand1.Page = this.Page1;
+            this.DataBand1.Parent = this.Page1;
+            this.Text11.Page = this.Page1;
+            this.Text11.Parent = this.DataBand1;
+            this.Text18.Page = this.Page1;
+            this.Text18.Parent = this.DataBand1;
+            this.Text19.Page = this.Page1;
+            this.Text19.Parent = this.DataBand1;
+            this.Text20.Page = this.Page1;
+            this.Text20.Parent = this.DataBand1;
+            this.Text21.Page = this.Page1;
+            this.Text21.Parent = this.DataBand1;
+            this.Text22.Page = this.Page1;
+            this.Text22.Parent = this.DataBand1;
+            this.StartPointPrimitive1.Page = this.Page1;
+            this.StartPointPrimitive1.Parent = this.DataBand1;
+            this.HorizontalLinePrimitive1.Page = this.Page1;
+            this.HorizontalLinePrimitive1.Parent = this.DataBand1;
+            this.EndPointPrimitive1.Page = this.Page1;
+            this.EndPointPrimitive1.Parent = this.DataBand1;
+            this.StartPointPrimitive3.Page = this.Page1;
+            this.StartPointPrimitive3.Parent = this.DataBand1;
+            this.EndPointPrimitive3.Page = this.Page1;
+            this.EndPointPrimitive3.Parent = this.DataBand1;
+            this.StartPointPrimitive4.Page = this.Page1;
+            this.StartPointPrimitive4.Parent = this.DataBand1;
+            this.EndPointPrimitive4.Page = this.Page1;
+            this.EndPointPrimitive4.Parent = this.DataBand1;
+            this.StartPointPrimitive5.Page = this.Page1;
+            this.StartPointPrimitive5.Parent = this.DataBand1;
+            this.EndPointPrimitive5.Page = this.Page1;
+            this.EndPointPrimitive5.Parent = this.DataBand1;
+            this.StartPointPrimitive6.Page = this.Page1;
+            this.StartPointPrimitive6.Parent = this.DataBand1;
+            this.EndPointPrimitive6.Page = this.Page1;
+            this.EndPointPrimitive6.Parent = this.DataBand1;
+            this.StartPointPrimitive7.Page = this.Page1;
+            this.StartPointPrimitive7.Parent = this.DataBand1;
+            this.EndPointPrimitive7.Page = this.Page1;
+            this.EndPointPrimitive7.Parent = this.DataBand1;
+            this.StartPointPrimitive14.Page = this.Page1;
+            this.StartPointPrimitive14.Parent = this.DataBand1;
+            this.EndPointPrimitive14.Page = this.Page1;
+            this.EndPointPrimitive14.Parent = this.DataBand1;
+            this.VerticalLinePrimitive1.Page = this.Page1;
+            this.VerticalLinePrimitive1.Parent = this.Page1;
+            this.VerticalLinePrimitive2.Page = this.Page1;
+            this.VerticalLinePrimitive2.Parent = this.Page1;
+            this.VerticalLinePrimitive3.Page = this.Page1;
+            this.VerticalLinePrimitive3.Parent = this.Page1;
+            this.VerticalLinePrimitive4.Page = this.Page1;
+            this.VerticalLinePrimitive4.Parent = this.Page1;
+            this.VerticalLinePrimitive5.Page = this.Page1;
+            this.VerticalLinePrimitive5.Parent = this.Page1;
+            this.VerticalLinePrimitive6.Page = this.Page1;
+            this.VerticalLinePrimitive6.Parent = this.Page1;
+            this.VerticalLinePrimitive7.Page = this.Page1;
+            this.VerticalLinePrimitive7.Parent = this.Page1;
+            this.VerticalLinePrimitive8.Page = this.Page1;
+            this.VerticalLinePrimitive8.Parent = this.Page1;
+            this.VerticalLinePrimitive9.Page = this.Page1;
+            this.VerticalLinePrimitive9.Parent = this.Page1;
+            this.VerticalLinePrimitive10.Page = this.Page1;
+            this.VerticalLinePrimitive10.Parent = this.Page1;
+            this.VerticalLinePrimitive11.Page = this.Page1;
+            this.VerticalLinePrimitive11.Parent = this.Page1;
+            this.VerticalLinePrimitive12.Page = this.Page1;
+            this.VerticalLinePrimitive12.Parent = this.Page1;
+            this.VerticalLinePrimitive13.Page = this.Page1;
+            this.VerticalLinePrimitive13.Parent = this.Page1;
+            this.VerticalLinePrimitive14.Page = this.Page1;
+            this.VerticalLinePrimitive14.Parent = this.Page1;
+            // 
+            // Add to HeaderBand1.Components
+            // 
+            this.HeaderBand1.Components.Clear();
+            this.HeaderBand1.Components.AddRange(new Stimulsoft.Report.Components.StiComponent[] {
+                        this.Text2,
+                        this.Text4,
+                        this.Text6,
+                        this.Text8,
+                        this.Text10,
+                        this.Text1,
+                        this.Text3,
+                        this.HorizontalLinePrimitive2,
+                        this.HorizontalLinePrimitive3,
+                        this.StartPointPrimitive2,
+                        this.EndPointPrimitive2,
+                        this.StartPointPrimitive8,
+                        this.EndPointPrimitive8,
+                        this.StartPointPrimitive9,
+                        this.StartPointPrimitive10,
+                        this.EndPointPrimitive10,
+                        this.StartPointPrimitive11,
+                        this.EndPointPrimitive11,
+                        this.StartPointPrimitive12,
+                        this.EndPointPrimitive12,
+                        this.StartPointPrimitive13,
+                        this.EndPointPrimitive13,
+                        this.EndPointPrimitive9,
+                        this.HorizontalLinePrimitive4});
+            // 
+            // Add to DataBand1.Components
+            // 
+            this.DataBand1.Components.Clear();
+            this.DataBand1.Components.AddRange(new Stimulsoft.Report.Components.StiComponent[] {
+                        this.Text11,
+                        this.Text18,
+                        this.Text19,
+                        this.Text20,
+                        this.Text21,
+                        this.Text22,
+                        this.StartPointPrimitive1,
+                        this.HorizontalLinePrimitive1,
+                        this.EndPointPrimitive1,
+                        this.StartPointPrimitive3,
+                        this.EndPointPrimitive3,
+                        this.StartPointPrimitive4,
+                        this.EndPointPrimitive4,
+                        this.StartPointPrimitive5,
+                        this.EndPointPrimitive5,
+                        this.StartPointPrimitive6,
+                        this.EndPointPrimitive6,
+                        this.StartPointPrimitive7,
+                        this.EndPointPrimitive7,
+                        this.StartPointPrimitive14,
+                        this.EndPointPrimitive14});
+            // 
+            // Add to Page1.Components
+            // 
+            this.Page1.Components.Clear();
+            this.Page1.Components.AddRange(new Stimulsoft.Report.Components.StiComponent[] {
+                        this.HeaderBand1,
+                        this.DataBand1,
+                        this.VerticalLinePrimitive1,
+                        this.VerticalLinePrimitive2,
+                        this.VerticalLinePrimitive3,
+                        this.VerticalLinePrimitive4,
+                        this.VerticalLinePrimitive5,
+                        this.VerticalLinePrimitive6,
+                        this.VerticalLinePrimitive7,
+                        this.VerticalLinePrimitive8,
+                        this.VerticalLinePrimitive9,
+                        this.VerticalLinePrimitive10,
+                        this.VerticalLinePrimitive11,
+                        this.VerticalLinePrimitive12,
+                        this.VerticalLinePrimitive13,
+                        this.VerticalLinePrimitive14});
+            // 
+            // Add to Pages
+            // 
+            this.Pages.Clear();
+            this.Pages.AddRange(new Stimulsoft.Report.Components.StiPage[] {
+                        this.Page1});
+            this.MaterialMaster.Columns.AddRange(new Stimulsoft.Report.Dictionary.StiDataColumn[] {
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("createdby", "createdby", "createdby", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("createddate", "createddate", "createddate", typeof(DateTime)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("deleted", "deleted", "deleted", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Expiredate", "Expiredate", "Expiredate", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("MaterialAutoid", "MaterialAutoid", "MaterialAutoid", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Materialcode", "Materialcode", "Materialcode", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("MaterialName", "MaterialName", "MaterialName", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("MaterialType", "MaterialType", "MaterialType", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("MnfDate", "MnfDate", "MnfDate", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("modifiedby", "modifiedby", "modifiedby", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("modifieddate", "modifieddate", "modifieddate", typeof(DateTime)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Quantity", "Quantity", "Quantity", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("rowversion", "rowversion", "rowversion", typeof(string)),
+                        new Stimulsoft.Report.Dictionary.StiDataColumn("Size", "Size", "Size", typeof(string))});
+            this.DataSources.Add(this.MaterialMaster);
+            this.Dictionary.Databases.Add(new Stimulsoft.Report.Dictionary.StiSqlDatabase("SJClassic", "SJClassic", "Initial Catalog=SJClassic;Integrated Security=False;Password=myplant;User ID=sa;Data Source=ARIVU-PC;Persist Security Info=True", false));
+            this.MaterialMaster.Connecting += new System.EventHandler(this.GetMaterialMaster_SqlCommand);
+        }
+        
+        public void GetMaterialMaster_SqlCommand(object sender, System.EventArgs e)
+        {
+            this.MaterialMaster.SqlCommand = "select * from MaterialMaster";
+        }
+        
+        #region DataSource MaterialMaster
+        public class MaterialMasterDataSource : Stimulsoft.Report.Dictionary.StiSqlSource
+        {
+            
+            public MaterialMasterDataSource() : 
+                    base("SJClassic", "MaterialMaster", "MaterialMaster", "", true, false, 30)
+            {
+            }
+            
+            public virtual string createdby
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["createdby"], typeof(string), true)));
+                }
+            }
+            
+            public virtual DateTime createddate
+            {
+                get
+                {
+                    return ((DateTime)(StiReport.ChangeType(this["createddate"], typeof(DateTime), true)));
+                }
+            }
+            
+            public virtual string deleted
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["deleted"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Expiredate
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Expiredate"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string MaterialAutoid
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["MaterialAutoid"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Materialcode
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Materialcode"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string MaterialName
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["MaterialName"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string MaterialType
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["MaterialType"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string MnfDate
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["MnfDate"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string modifiedby
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["modifiedby"], typeof(string), true)));
+                }
+            }
+            
+            public virtual DateTime modifieddate
+            {
+                get
+                {
+                    return ((DateTime)(StiReport.ChangeType(this["modifieddate"], typeof(DateTime), true)));
+                }
+            }
+            
+            public virtual string Quantity
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Quantity"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string rowversion
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["rowversion"], typeof(string), true)));
+                }
+            }
+            
+            public virtual string Size
+            {
+                get
+                {
+                    return ((string)(StiReport.ChangeType(this["Size"], typeof(string), true)));
+                }
+            }
+        }
+        #endregion DataSource MaterialMaster
+        #endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>
